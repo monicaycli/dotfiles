@@ -20,7 +20,18 @@ sh setup.sh
 * tig
 	- install diff-highlight: copy complied diff-highlight to /opt/local/bin
 * Sublime
+	- install package control
 	- install Spacegray Theme
+	- install GitGutter
+	- install AcademicMarkdown
+	- install Markdown Preview
+	- install Markdown Editing
+	- install R-Box
+	- install Citer
+	- install LatexTools
+	- install SendCode
+* vim
+	- install Plug
 
 ## Things to update regularly
 * AFNI
