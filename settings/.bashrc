@@ -1,23 +1,60 @@
-export EDITOR='vim'
-alias s='subl'
+# =========================
+#  PATH
+# =========================
+export PATH=~/abin:$PATH
+export PATH=~/bin:$PATH
 
-alias .ls='ls -d .*'
-alias ls='ls -Gp'
+# =========================
+#  AFNI
+# =========================
+ahdir=`apsearch -afni_help_dir`
+if [ -f "$ahdir/all_progs.COMP.bash" ]
+then
+   . $ahdir/all_progs.COMP.bash
+fi
 
-alias ..='cl ..'
-alias ...='cl ../..'
-alias back='cd -'
+# =========================
+#  EDITORS
+# =========================
+export EDITOR="vim"
+alias s="subl"
+
+# =========================
+#  shell
+# =========================
+#  ls
+# -------------------------
+alias .ls="ls -d .*" # show hidden files
+alias ls="ls -Gp"
+
+#  cd
+# -------------------------
+alias ..="cd .." # step back 1 level
+alias ...="cd ../.." # step back 2 levels
+alias back="cd -" # back button
 function cl() { cd "$@" && ls; }
 function md() { mkdir -p "$@" && cd "$_"; }
 
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
+#  idiot-proofing overwrites
+# -------------------------
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
 
-alias reload='source $HOME/.bash_profile'
-alias r='reload'
-alias c='clear'
+#  CLI management
+# -------------------------
+alias reload="source $HOME/.bash_profile"
+alias c="clear"
+alias r="reload"
 
+# =========================
+#  GIT
+# =========================
 alias git=hub
 
+# =========================
+#  MISC.
+# =========================
 function weather() { curl wttr.in/"$@"; }
+
+
