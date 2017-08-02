@@ -6,7 +6,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 shopt -s dotglob
 
 # symlink dotfiles
-for filename in *; do
+for filename in settings/*; do
 	  ln -fs "$DIR/$filename" "$HOME/$(basename "$filename")"
 done
 
