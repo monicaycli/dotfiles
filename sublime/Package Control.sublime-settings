@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AcademicMarkdown",
+		"ayu",
+		"Citer",
+		"GitGutter",
+		"Gruvbox Dark",
+		"LaTeXTools",
+		"Markdown Extended",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Monokai Extended",
+		"Number King",
+		"Package Control",
+		"R-Box",
+		"SendCode",
+		"Theme - Spacegray"
+	]
+}

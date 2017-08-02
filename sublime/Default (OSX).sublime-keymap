@@ -1,0 +1,6 @@
+[
+	{ "keys": ["ctrl+c"], "command": "list_critics" },
+	{ "keys": ["ctrl+a"], "command": "accept_critic" },
+	{ "keys": ["ctrl+l"], "command": "list_critics_comments" },
+	{ "keys": ["ctrl+m"], "command": "mark_critic" }
+]
