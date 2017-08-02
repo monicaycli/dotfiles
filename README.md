@@ -19,6 +19,8 @@ sh setup.sh
 		+ ⌥←Delete: Send Hex Codes: 0x1b 0x08
 * tig
 	- install diff-highlight: copy complied diff-highlight to /opt/local/bin
+* Sublime
+	- install Spacegray Theme
 
 ## Things to update regularly
 * AFNI
