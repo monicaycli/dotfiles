@@ -1,6 +1,9 @@
+" misc
 set nocompatible
 filetype plugin on
 syntax on
+set backspace=2
+set autochdir
 
 " plugins
 call plug#begin()
@@ -39,5 +42,3 @@ set splitright
 " markdown syntax highlighting settings
 let g:vim_markdown_folding_disabled = 1
 
-" file navigation
-set autochdir
