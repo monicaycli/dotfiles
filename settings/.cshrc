@@ -3,6 +3,7 @@ setenv EDITOR vim
 # PATH
 set path = ( $path /usr/local/go/bin )
 set path = ( $path /usr/local/bin )
+set path = ( $path /opt/local/bin )
 
 # Optseq
 set path = ( $path ~/optseq2)
