@@ -35,5 +35,6 @@ sh setup.sh
 
 ## Things to update regularly
 * AFNI: `@update.afni.binaries -defaults` in `~/abin`
+* fink: `fink reinstall fink` or `fink selfupdate`
 * tig
 * git
