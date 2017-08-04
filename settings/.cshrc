@@ -16,7 +16,6 @@ alias caret '~/caret/bin_macosx64/caret5'
 set path = ( $path ~/abin )
 setenv DYLD_FALLBACK_LIBRARY_PATH $HOME/abin
 setenv DYLD_LIBRARY_PATH /opt/X11/lib/flat_namespace
-setenv PYTHONPATH /sw/lib/qt4-mac/lib/python2.7/site-packages
 
 if ( -f $HOME/.afni/help/all_progs.COMP ) then
    source $HOME/.afni/help/all_progs.COMP
@@ -35,14 +34,15 @@ set nobeep
 # FINK
 test -r /sw/bin/init.csh && source /sw/bin/init.csh
 setenv PYTHONPATH /sw/lib/qt4-mac/lib/python2.7/site-packages
+setenv PYTHONPATH ${PYTHONPATH}:/usr/local/lib/python2.7/site-packages
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .cshrc.pysave
-set path=(/Library/Frameworks/Python.framework/Versions/2.7/bin $path)
+# set path=(/Library/Frameworks/Python.framework/Versions/2.7/bin $path)
 
 # Setting PATH for Python 3.5
 # The orginal version is saved in .cshrc.pysave
-set path=(/Library/Frameworks/Python.framework/Versions/3.5/bin $path)
+# set path=(/Library/Frameworks/Python.framework/Versions/3.5/bin $path)
 
 # set octave alias
 alias octave /usr/local/octave/3.8.0/bin/octave-3.8.0
