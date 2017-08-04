@@ -34,6 +34,6 @@ sh setup.sh
 	- install Plug
 
 ## Things to update regularly
-* AFNI
+* AFNI: `@update.afni.binaries -defaults` in `~/abin`
 * tig
 * git
