@@ -12,6 +12,7 @@ if [ -f "$ahdir/all_progs.COMP.bash" ]
 then
    . $ahdir/all_progs.COMP.bash
 fi
+export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
 
 # =========================
 #  EDITORS
