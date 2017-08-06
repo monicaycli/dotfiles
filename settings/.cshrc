@@ -32,14 +32,14 @@ alias octave /usr/local/octave/3.8.0/bin/octave-3.8.0
 # Tim's awesome aliases
 # Config
 alias r "source ~/.cshrc" # reload
-alias .cshrc "subl ~/.cshrc" # change config
+alias .cshrc "vim ~/.cshrc" # change config
 
 # Open in...
 alias s subl
 alias f "open -a Finder ./"
 
 # Navigation
-alias cd "cd \!* ; ls"
+alias cl "cd \!* ; ls"
 alias .. "cd .." # step back 1 level
 alias ... "cd ../.." # step back 2 levels
 alias back "cd -" # back button
@@ -48,6 +48,8 @@ alias ls "ls -Gp"
 alias ll "ls -lGp"
 
 # Anti idiot
+alias cp "cp -i"
+alias mv "mv -i"
 alias rm "rm -i"
 
 # Activity dashboard
