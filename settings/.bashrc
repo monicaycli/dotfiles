@@ -1,49 +1,27 @@
 # =========================
-#  PATH
-# =========================
-export PATH=~/bin:$PATH
-
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# Misc.
-export PATH=/usr/local/lib:/usr/local/bin:$PATH
-
-#PYTHONPATH
-export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
-
-# =========================
 #  AFNI
 # =========================
-export PATH=~/abin:$PATH
 ahdir=`apsearch -afni_help_dir`
 if [ -f "$ahdir/all_progs.COMP.bash" ]
 then
    . $ahdir/all_progs.COMP.bash
 fi
-export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
-
 # FINK
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
-# OPTSEQ2
-export PATH="~/optseq2:$PATH"
-
 # CARET
-export PATH="~/caret/bin_macosx64:$PATH"
 alias caret='~/caret/bin_macosx64/caret5'
   
 # =========================
-#  ANACONDA
+#  EDITOR
 # =========================
-export PATH="//anaconda/bin:$PATH"
+alias s="subl"
+
 
 # =========================
-#  EDITORS
+#  OCTAVE
 # =========================
-export EDITOR="vim"
-alias s="subl"
+alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 
 # =========================
 #  shell

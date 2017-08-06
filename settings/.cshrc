@@ -1,30 +1,13 @@
-setenv EDITOR vim
-
-# PATH
-set path = ( $path /usr/local/go/bin )
-set path = ( $path /usr/local/bin )
-set path = ( $path /opt/local/bin )
-set path = ( $path $HOME/bin )
-
-# Optseq
-set path = ( $path ~/optseq2)
-
 # Caret
-set path = ( $path ~/caret/bin_macosx64 ) 
 alias caret '~/caret/bin_macosx64/caret5'
 
 # AFNI
-set path = ( $path ~/abin )
-setenv DYLD_FALLBACK_LIBRARY_PATH $HOME/abin
-setenv DYLD_LIBRARY_PATH /opt/X11/lib/flat_namespace
-
-if ( -f $HOME/.afni/help/all_progs.COMP ) then
-   source $HOME/.afni/help/all_progs.COMP
-endif
-
 set ahdir = `apsearch -afni_help_dir`
 if ( -f $ahdir/all_progs.COMP ) then
    source $ahdir/all_progs.COMP
+endif
+if ( -f $HOME/.afni/help/all_progs.COMP ) then
+   source $HOME/.afni/help/all_progs.COMP
 endif
 
 # niceifying AFNI interfaces
@@ -34,8 +17,6 @@ set nobeep
 
 # FINK
 test -r /sw/bin/init.csh && source /sw/bin/init.csh
-setenv PYTHONPATH /sw/lib/qt4-mac/lib/python2.7/site-packages
-setenv PYTHONPATH /usr/local/lib/python2.7/site-packages:${PYTHONPATH}
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .cshrc.pysave
