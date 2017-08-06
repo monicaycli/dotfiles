@@ -6,9 +6,6 @@ set path = ( $path /usr/local/bin )
 set path = ( $path /opt/local/bin )
 set path = ( $path $HOME/bin )
 
-# Anaconda
-set path = ( $path //anaconda/bin )
-
 # Optseq
 set path = ( $path ~/optseq2)
 
@@ -38,7 +35,7 @@ set nobeep
 # FINK
 test -r /sw/bin/init.csh && source /sw/bin/init.csh
 setenv PYTHONPATH /sw/lib/qt4-mac/lib/python2.7/site-packages
-setenv PYTHONPATH ${PYTHONPATH}:/usr/local/lib/python2.7/site-packages
+setenv PYTHONPATH /usr/local/lib/python2.7/site-packages:${PYTHONPATH}
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .cshrc.pysave
