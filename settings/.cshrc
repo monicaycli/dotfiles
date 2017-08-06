@@ -6,6 +6,9 @@ set path = ( $path /usr/local/bin )
 set path = ( $path /opt/local/bin )
 set path = ( $path $HOME/bin )
 
+# Anaconda
+set path = ( $path //anaconda/bin )
+
 # Optseq
 set path = ( $path ~/optseq2)
 
