@@ -1,9 +1,4 @@
 # =========================
-#  SOURCE .bashrc
-# =========================
-source ~/.bashrc
-
-# =========================
 #  EDITOR
 # =========================
 export EDITOR="vim"
@@ -45,3 +40,8 @@ export PATH=//anaconda/bin:$PATH
 #  EYE TRACKING
 # =========================
 export PATH=/Applications/Eyelink/EDF_Access_API/Example:$PATH
+
+# =========================
+#  SOURCE .bashrc
+# =========================
+source ~/.bashrc
