@@ -15,6 +15,10 @@ for filename in sublime/*; do
   cp -i "$filename" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/$(basename "$filename")"
 done
 
+# Specify the preferences directory for iTerm
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DIR/iTerm"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 # turn off detect hidden files
 shopt -u dotglob
 
