@@ -29,6 +29,9 @@ let g:lightline = {
       \ },
       \ }
 
+" vimwiki settings
+let g:vimwiki_hl_headers = 1
+
 " split screen settings
 " remap shortcuts
 nnoremap <C-J> <C-W><C-J>
