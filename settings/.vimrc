@@ -13,6 +13,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'suan/vim-instant-markdown'
 call plug#end()
 
 " lightline settings
@@ -42,8 +43,10 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-" markdown syntax highlighting settings
+" markdown settings
 let g:vim_markdown_folding_disabled = 1
+let g:instant_markdown_autostart = 0	" disable autostart
+map <leader>md :InstantMarkdownPreview<CR>
 
 " Change cursor shape between insert and normal mode in iTerm2.app
 if $TERM_PROGRAM =~ "iTerm"
