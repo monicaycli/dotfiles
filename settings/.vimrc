@@ -32,6 +32,8 @@ let g:lightline = {
 
 " vimwiki settings
 let g:vimwiki_hl_headers = 1
+" vimwiki with markdown support
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
 " split screen settings
 " remap shortcuts
