@@ -8,7 +8,9 @@ then
 fi
 # FINK
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
-
+# DYLD
+export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
+export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin
 # CARET
 alias caret='~/caret/bin_macosx64/caret5'
   

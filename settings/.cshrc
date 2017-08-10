@@ -10,6 +10,10 @@ if ( -f $HOME/.afni/help/all_progs.COMP ) then
    source $HOME/.afni/help/all_progs.COMP
 endif
 
+# DYLD
+setenv DYLD_LIBRARY_PATH /opt/X11/lib/flat_namespace
+setenv DYLD_FALLBACK_LIBRARY_PATH $HOME/abin
+
 # niceifying AFNI interfaces
 set filec
 set autolist

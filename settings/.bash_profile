@@ -22,8 +22,6 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
 # =========================
 # AFNI
 export PATH=~/abin:$PATH
-export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
-export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin
 
 # OPTSEQ2
 export PATH=~/optseq2:$PATH
