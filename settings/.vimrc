@@ -16,6 +16,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'suan/vim-instant-markdown'
 call plug#end()
 
+" GitGutter settings
+map <Leader>ggt :GitGutterToggle<Enter>
+map <Leader>ggst :GitGutterSignsToggle<Enter>
+map <Leader>gght :GitGutterLineHighlightsToggle<Enter>
+
 " lightline settings
 set laststatus=2
 set noshowmode
