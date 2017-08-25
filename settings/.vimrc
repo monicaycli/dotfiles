@@ -18,7 +18,11 @@ Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'suan/vim-instant-markdown'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
+
+" colorscheme
+" colorscheme material 
 
 " GitGutter settings
 map <Leader>ggt :GitGutterToggle<Enter>
