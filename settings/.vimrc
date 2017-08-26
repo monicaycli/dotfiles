@@ -4,8 +4,12 @@ filetype plugin on
 syntax on
 set backspace=2
 set autochdir
+
+" line number settings
 set nu " line number on
-map <Leader>nu :set<Space>nu!<Enter>
+
+" toggle show/hide sidebar (line number and GitGutter)
+map <Leader>nu :set<Space>nu!<Enter>:set<Space>rnu!<Enter>:GitGutterToggle<Enter>
 
 " word & line wrapping
 "set tw=80 " hard wrap at column 80
@@ -26,15 +30,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'suan/vim-instant-markdown'
 Plug 'flazz/vim-colorschemes'
+Plug 'myusuf3/numbers.vim'
 call plug#end()
 
 " colorscheme
 " colorscheme material 
-
-" GitGutter settings
-map <Leader>ggt :GitGutterToggle<Enter>
-map <Leader>ggst :GitGutterSignsToggle<Enter>
-map <Leader>gght :GitGutterLineHighlightsToggle<Enter>
 
 " lightline settings
 set laststatus=2
