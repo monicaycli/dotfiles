@@ -6,8 +6,15 @@ set backspace=2
 set autochdir
 set nu " line number on
 map <Leader>nu :set<Space>nu!<Enter>
+
+" word & line wrapping
 "set tw=80 " hard wrap at column 80
 "set colorcolumn=+1 " show hard wrap boundary
+
+" tab width
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " plugins
 call plug#begin()
