@@ -9,7 +9,9 @@ set autochdir
 set nu " line number on
 
 " toggle show/hide sidebar (line number and GitGutter)
-map <Leader>nu :set<Space>nu!<Enter>:set<Space>rnu!<Enter>:GitGutterToggle<Enter>
+map <Leader>nu :set<Space>nu!<Enter>:GitGutterToggle<Enter>
+" toggle show/hide relative line number
+map <Leader>rnu :set<Space>rnu!<Enter>
 
 " word & line wrapping
 "set tw=80 " hard wrap at column 80
@@ -30,7 +32,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'suan/vim-instant-markdown'
 Plug 'flazz/vim-colorschemes'
-Plug 'myusuf3/numbers.vim'
 call plug#end()
 
 " colorscheme
