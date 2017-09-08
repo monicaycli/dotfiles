@@ -7,7 +7,7 @@ set autochdir
 
 " line number settings
 set nu " line number on
-
+set rnu " relative line number on
 " toggle show/hide sidebar (line number and GitGutter)
 map <Leader>nu :set<Space>nu!<Enter>:GitGutterToggle<Enter>
 " toggle show/hide relative line number
