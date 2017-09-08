@@ -27,6 +27,8 @@
 *.sqlite
 .Rdata
 .Rhistory
+*.Rproj
+.Rproj.user
 
 # OS generated files #
 ######################
