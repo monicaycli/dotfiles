@@ -32,6 +32,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'suan/vim-instant-markdown'
 Plug 'flazz/vim-colorschemes'
+Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'kurocode25/mdforvim'
 call plug#end()
 
 " colorscheme
