@@ -36285,13 +36285,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>648 198 599 388 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>501 294 796 473 0 0 1440 878 </string>
+	<string>522 349 918 495 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>5 -1 1434 878 0 0 1440 878 </string>
+	<string>0 10 1423 862 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3 10 1433 860 0 0 1440 877 </string>
+	<string>4 12 1423 858 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>4 10 1418 860 0 0 1440 900 </string>
+	<string>1 4 1438 873 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>4 10 1433 860 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -36987,7 +36987,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>8F4E8C26-ED3D-41FF-B7AB-EBE084FAA840</string>
 	<key>NoSyncLastTipTime</key>
-	<real>511976633.66205698</real>
+	<real>525302529.761195</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -37001,6 +37001,7 @@
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
+		<string>0000</string>
 		<string>0000</string>
 	</array>
 	<key>PointerActions</key>
@@ -37047,7 +37048,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-06T13:05:48Z</date>
+	<date>2017-09-08T20:37:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
@@ -37056,9 +37057,22 @@
 	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Profiles</string>
+		<string>Notes</string>
+	</array>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.14</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
