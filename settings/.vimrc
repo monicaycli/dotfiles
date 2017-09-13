@@ -71,6 +71,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" SEARCH
+set gdefault
+set hlsearch
+set incsearch
+
 " PANDOC
 "" spell check
 "let g:pandoc#modules#disabled = ["spell"]
