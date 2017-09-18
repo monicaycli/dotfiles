@@ -108,7 +108,14 @@ let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
 
 " VIMWIKI
+" header colors
 let g:vimwiki_hl_headers = 1
+hi vimwikiheader1 ctermfg=125
+hi VimwikiHeader2 ctermfg=136
+hi VimwikiHeader3 ctermfg=64
+hi VimwikiHeader4 ctermfg=37
+hi VimwikiHeader5 ctermfg=37
+hi VimwikiHeader6 ctermfg=37
 " vimwiki with markdown support
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
