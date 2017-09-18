@@ -85,10 +85,15 @@ set incsearch
 "hi clear SpellCap
 "hi SpellCap ctermfg=Blue
 """other spell checks include SpellRare and SpellLocal
+"" bibliography
+let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Manuscripts/library.bib"]
+let g:pandoc#completion#bib#mode = 'citeproc'
+let g:pandoc#biblio#use_bibtool = 1
 "" pdf conversion
-let g:pandoc#command#autoexec_on_writes = 1
+let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-map <leader>pp :Pandoc<Space>pdf<Enter>
+map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
+map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
 "" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax 
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
 let g:pandoc#filetypes#pandoc_markdown = 0
