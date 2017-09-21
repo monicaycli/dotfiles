@@ -119,6 +119,11 @@ hi VimwikiHeader6 ctermfg=37
 " vimwiki with markdown support
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+" vimwiki tag settings
+map <Leader>vst :VimwikiSearchTags
+map <Leader>vgt :VimwikiGenerateTags<Enter>
+map <Leader>vrt :VimwikiRebuildTags<Enter>
+map <Leader>lo :lopen<Enter>
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
