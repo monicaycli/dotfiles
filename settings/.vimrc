@@ -124,6 +124,9 @@ map <Leader>vst :VimwikiSearchTags
 map <Leader>vgt :VimwikiGenerateTags<Enter>
 map <Leader>vrt :VimwikiRebuildTags<Enter>
 map <Leader>lo :lopen<Enter>
+" todo list settings
+map <Leader>tt <Plug>VimwikiToggleListItem
+let g:vimwiki_listsyms = ' .oOx'
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
