@@ -1,3 +1,5 @@
+*Proceed with caution: This is for my personal use. I can't guarantee any of the scripts or configurations work on other computers as is.*
+
 # dotfiles
 
 ## Setup
