@@ -127,6 +127,8 @@ map <Leader>lo :lopen<Enter>
 " todo list settings
 map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
+" navigation settings
+nmap <Leader>wq <Plug>VimwikiVSplitLink
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
