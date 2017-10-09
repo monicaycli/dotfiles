@@ -66,7 +66,7 @@ let g:ctrlp_user_command = ['.git',
             \ 'find %s -type f' ]
 
 " WHITESPACE
-set lcs=tab:\▹\ ,trail:·
+set lcs=tab:\·\ ,trail:·
 set list
 set tabstop=2
 set shiftwidth=0
