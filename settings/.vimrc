@@ -17,6 +17,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'vimwiki/vimwiki'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " DISPLAY
@@ -64,6 +65,8 @@ set wildmode=longest:list,full
 let g:ctrlp_user_command = ['.git',
             \ 'cd %s && git ls-files . -co --exclude-standard',
             \ 'find %s -type f' ]
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
 " WHITESPACE
 set lcs=tab:\·\ ,trail:·
