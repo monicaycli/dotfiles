@@ -97,7 +97,7 @@ let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
 map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
 map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
-"" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax 
+"" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
 let g:pandoc#filetypes#pandoc_markdown = 0
 
@@ -137,3 +137,6 @@ nmap <Leader>wq <Plug>VimwikiVSplitLink
 let g:vim_markdown_folding_disabled = 1
 let g:instant_markdown_autostart = 0	" disable autostart
 map <leader>md :InstantMarkdownPreview<CR>
+
+" COPY
+set clipboard=unnamed
