@@ -53,3 +53,7 @@ Icon?
 *.avi
 *.bmp
 *.BMP
+
+# temp files #
+##############
+*.swp
