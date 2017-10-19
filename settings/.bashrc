@@ -13,7 +13,7 @@ export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
 export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/
 # CARET
 alias caret='~/caret/bin_macosx64/caret5'
-  
+
 # =========================
 #  EDITOR
 # =========================
@@ -75,7 +75,7 @@ alias gpom="git push origin master"
 # =========================
 #  MISC.
 # =========================
-function weather() { curl wttr.in/"$@"; }
+function weather() { curl wttr.in/"$@"?m; }
 
 # Activity dashboard
 alias t="top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
