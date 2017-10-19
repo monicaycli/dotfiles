@@ -76,3 +76,6 @@ alias gpom "git push origin master"
 
 # hub alias
 eval "`hub alias -s`"
+
+# powerline-shell
+alias precmd 'set prompt="`powerline-shell --shell tcsh $?`"'

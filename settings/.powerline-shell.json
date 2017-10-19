@@ -1,0 +1,15 @@
+{
+  "segments": [
+    "virtual_env",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "cwd": {
+    "mode": "plain"
+    },
+  "theme": "solarized_dark"
+}

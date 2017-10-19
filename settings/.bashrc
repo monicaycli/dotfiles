@@ -79,3 +79,12 @@ function weather() { curl wttr.in/"$@"?m; }
 
 # Activity dashboard
 alias t="top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
+
+# powerline-shell
+function _update_ps1() {
+    PS1="$(powerline-shell $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
