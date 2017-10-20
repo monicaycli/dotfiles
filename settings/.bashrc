@@ -71,6 +71,8 @@ alias gch--.="git checkout -- ." # reset local changes on branch
 alias gpush="git push"
 alias gp="gpush"
 alias gpom="git push origin master"
+alias gf="git fetch origin"
+alias gfs="gf && gs"
 
 # =========================
 #  MISC.
