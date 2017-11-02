@@ -28,6 +28,7 @@ set title
 set cursorline
 set laststatus=2
 set noshowmode
+set background=dark
 colorscheme solarized
 
 " line number
