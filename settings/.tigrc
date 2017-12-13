@@ -166,6 +166,7 @@ bind refs	C	?git checkout %(branch)
 bind refs	!	?git branch -D %(branch)
 bind generic + !git commit --amend
 bind generic 9 @bash -c "echo -n `echo %(commit) | cut -c 1-7` | pbcopy" # copy (yank) commid hash to clipboard (truncated to 7 chars)
+bind status D !@?rm %(file)
 
 # Normal commands
 # ---------------
