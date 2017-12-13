@@ -10,7 +10,7 @@ fi
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 # DYLD
 export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
-export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/
+export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/:/usr/local/opt/ruby/lib
 # CARET
 alias caret='~/caret/bin_macosx64/caret5'
 
