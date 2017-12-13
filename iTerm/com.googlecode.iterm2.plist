@@ -36292,13 +36292,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 365 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>436 356 918 394 0 0 1440 878 </string>
+	<string>436 435 918 394 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 18 1432 860 0 0 1440 878 </string>
+	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 5 1432 873 0 0 1440 878 </string>
+	<string>0 27 1440 851 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 5 1432 873 0 0 1440 878 </string>
+	<string>724 4 712 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>218 25 730 477 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
@@ -37009,6 +37009,8 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>527693560.16274798</real>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -37044,6 +37046,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/mli/Google-Drive/Github/dotfiles/iTerm</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -37053,7 +37057,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-16T13:28:21Z</date>
+	<date>2017-11-11T20:22:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
@@ -37069,10 +37073,12 @@
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.1.4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
