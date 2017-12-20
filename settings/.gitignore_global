@@ -43,16 +43,16 @@ Icon?
 
 # Media files #
 ###############
-*.jpg
-*.png
-*.wav
-*.WAV
-*.mp3
-*.mov
-*.mp4
-*.avi
-*.bmp
-*.BMP
+#*.jpg
+#*.png
+#*.wav
+#*.WAV
+#*.mp3
+#*.mov
+#*.mp4
+#*.avi
+#*.bmp
+#*.BMP
 
 # temp files #
 ##############
