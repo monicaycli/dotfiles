@@ -16,16 +16,6 @@
 [tig]
 	diff-highlight = true
 
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
-	trustExitCode = false
-
-[merge]
-	tool = sublime
-
-[mergetool]
-	keepBackup = false
-
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
@@ -33,3 +23,17 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = "vim"
+
+[merge]
+	tool = "vimdiff"
+	conflictstyle = "diff3"
+
+[mergetool]
+	prompt = false
+
+[diff]
+	tool = "vimdiff"
+
+[difftool]
+	prompt = false
