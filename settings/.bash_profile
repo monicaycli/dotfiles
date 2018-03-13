@@ -29,6 +29,14 @@ export PATH=~/optseq2:$PATH
 # CARET
 export PATH=~/caret/bin_macosx64:$PATH
 
+# FREESURFER
+export FREESURFER_HOME=/Applications/freesurfer
+export FREESURFER_USER_HOME=/Users/mli/freesurfer
+export SUBJECTS_DIR=$FREESURFER_USER_HOME/subjects
+export FUNCTIONALS_DIR=$FREESURFER_USER_HOME/sessions
+export TUTORIAL_DATA=/Users/mli/HPC/fs_tutorial_data
+source $FREESURFER_HOME/FreeSurferEnv.sh
+
 # =========================
 #  ANACONDA
 # =========================
