@@ -155,3 +155,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ['lintr']
+
+let g:syntastic_python_python_exec = '/Library/Frameworks/Python.framework/Versions/2.7/bin/python2'
+let g:syntastic_python_checkers = ['python']
