@@ -36249,6 +36249,8 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 7</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Google-Drive/Github/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -36289,14 +36291,16 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>720 37 720 706 0 0 1440 878 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 365 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>436 435 918 394 0 0 1440 900 </string>
+	<string>436 356 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1440 874 0 0 1440 878 </string>
+	<string>659 423 570 452 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 27 1440 851 0 0 1440 878 </string>
+	<string>-839 483 838 1024 -1680 479 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>724 4 712 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -36923,7 +36927,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMonoForPowerline-Light 15</string>
+			<string>SauceCodePowerline-Light 15</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -37057,7 +37061,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-11T20:22:58Z</date>
+	<date>2018-03-30T15:27:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
@@ -37078,7 +37082,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
