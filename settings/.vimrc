@@ -77,8 +77,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
-autocmd FileType markdown set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
+autocmd FileType markdown setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
 
 " SEARCH
 set gdefault
