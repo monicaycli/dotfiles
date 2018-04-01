@@ -74,8 +74,11 @@ map <C-n> :NERDTreeToggle<CR>
 set lcs=tab:\·\ ,trail:·
 set list
 set tabstop=2
-set shiftwidth=0
-set noexpandtab
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
+autocmd FileType markdown set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
 
 " SEARCH
 set gdefault
