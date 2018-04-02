@@ -13,11 +13,11 @@ Plug 'suan/vim-instant-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vimwiki/vimwiki'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'vim-syntastic/syntastic'
-Plug 'vimwiki/vimwiki'
 Plug 'scrooloose/nerdtree'
 call plug#end()
 
