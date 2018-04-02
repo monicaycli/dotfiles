@@ -94,7 +94,7 @@ set incsearch
 "hi SpellCap ctermfg=Blue
 """other spell checks include SpellRare and SpellLocal
 "" bibliography
-let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Manuscripts/library.bib"]
+let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Library/example.bib", "/Users/mli/Google-Drive/Library/GE1.bib", "/Users/mli/Google-Drive/Library/GE2.bib", "/Users/mli/Google-Drive/Library/SUBCAT.bib"]
 let g:pandoc#completion#bib#mode = 'citeproc'
 let g:pandoc#biblio#use_bibtool = 1
 "" pdf conversion
