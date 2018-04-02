@@ -1,6 +1,7 @@
 # =========================
 #  QUICK CD
 # =========================
+alias dot="cd /Users/mli/Google-Drive/Github/dotfiles/"
 alias gd="cd /Users/mli/Google-Drive/"
 alias fs="cd /Volumes/GoogleDrive/My\ Drive"
 alias bib="cd /Users/mli/Google-Drive/Library/"
