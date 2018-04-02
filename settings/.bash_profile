@@ -14,8 +14,8 @@ export PATH=/usr/local/lib:/usr/local/bin:/usr/local/go/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # PYTHONPATH
-export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
+#export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages${PYTHONPATH}
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
 
 # =========================
 #  NEUROIMAGING
