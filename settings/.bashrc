@@ -1,14 +1,16 @@
 # =========================
 #  QUICK CD
 # =========================
-alias dot="cd /Users/mli/Google-Drive/Github/dotfiles/"
-alias gd="cd /Users/mli/Google-Drive/"
-alias fs="cd /Volumes/GoogleDrive/My\ Drive"
-alias bib="cd /Users/mli/Google-Drive/Library/"
-alias subcat="cd /Users/mli/Google-Drive/Manuscripts/2017_Subcat/"
-alias ge1="cd /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_1/"
-alias ge2="cd /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_2/"
 alias vimwiki="cd $HOME/vimwiki"
+export GD="$HOME/Google-Drive"
+export FS="/Volumes/GoogleDrive/My\ Drive"
+alias gd="cd $GD"
+alias fs="cd $FS"
+alias dot="cd $GD/Github/dotfiles"
+alias bib="cd $GD/Library"
+alias subcat="cd $GD/Manuscripts/2017_Subcat"
+alias ge1="cd $GD/Manuscripts/2017_General-Exam_1"
+alias ge2="cd $GD/Manuscripts/2017_General-Exam_2"
 
 # =========================
 #  AFNI
