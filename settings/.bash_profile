@@ -13,10 +13,6 @@ export PATH=/usr/local/lib:/usr/local/bin:/usr/local/go/bin:$PATH
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-# PYTHONPATH
-#export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages${PYTHONPATH}
-#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
-
 # =========================
 #  NEUROIMAGING
 # =========================
@@ -55,11 +51,15 @@ export PATH=//anaconda/bin:$PATH
 export PATH=/Applications/Eyelink/EDF_Access_API/Example:$PATH
 
 # =========================
+#  PYTHON
 # =========================
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
+# PYTHONPATH
+#export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages${PYTHONPATH}
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
 
 # =========================
 #  RVM
