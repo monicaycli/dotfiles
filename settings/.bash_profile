@@ -38,6 +38,12 @@ export TUTORIAL_DATA=/Users/mli/HPC/fs_tutorial_data
 export FS_FREESURFERENV_NO_OUTPUT=TRUE
 source $FREESURFER_HOME/FreeSurferEnv.sh
 
+# FSL Setup
+FSLDIR=/usr/local/fsl
+PATH=${FSLDIR}/bin:${PATH}
+export FSLDIR PATH
+. ${FSLDIR}/etc/fslconf/fsl.sh
+
 # =========================
 #  ANACONDA
 # =========================
@@ -57,11 +63,5 @@ source ~/.bashrc
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
-
-# FSL Setup
-FSLDIR=/usr/local/fsl
-PATH=${FSLDIR}/bin:${PATH}
-export FSLDIR PATH
-. ${FSLDIR}/etc/fslconf/fsl.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
