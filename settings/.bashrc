@@ -8,6 +8,7 @@ alias bib="cd /Users/mli/Google-Drive/Library/"
 alias subcat="cd /Users/mli/Google-Drive/Manuscripts/2017_Subcat/"
 alias ge1="cd /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_1/"
 alias ge2="cd /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_2/"
+alias vimwiki="cd $HOME/vimwiki"
 
 # =========================
 #  AFNI
