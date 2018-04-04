@@ -9,6 +9,7 @@ export EDITOR="vim"
 # Misc.
 export PATH=~/bin:$PATH
 export PATH=/usr/local/lib:/usr/local/bin:/usr/local/go/bin:$PATH
+export PATH=/usr/local/opt/sqlite/bin:$PATH
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
@@ -65,6 +66,11 @@ export PATH
 #  RVM
 # =========================
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# =========================
+#  THEFUCK
+# =========================
+eval $(thefuck --alias)
 
 # =========================
 #  SOURCE .bashrc
