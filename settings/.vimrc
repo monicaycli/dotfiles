@@ -72,6 +72,19 @@ if exists('$TMUX')
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 endif
 
+" VIM NAVIGATION
+" Edit init.vim in separate tab with '\rc'
+nnoremap <Leader>rc :tabe ~/.vimrc<CR>
+inoremap <Leader>rc <C-O>:tabe ~/.vimrc<CR>
+
+" Source init.vim with '\s'
+nnoremap <Leader>s :source ~/.vimrc<CR>
+inoremap <Leader>s <C-O>:source ~/.vimrc<CR>
+
+" switch between buffers with `\]` and `\[`
+nnoremap <Leader>] :bn<CR>
+nnoremap <Leader>[ :bN<CR>
+
 " FILE NAVIGATION
 " change working directory to current file
 set autochdir
