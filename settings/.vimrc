@@ -40,6 +40,9 @@ set term=screen-256color
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_termcolors=16
+if has('gui_running')
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+endif
 
 " line number
 set nu " line number on
@@ -138,12 +141,12 @@ let g:airline_theme='gruvbox'
 " VIMWIKI
 " header colors
 let g:vimwiki_hl_headers = 1
-hi vimwikiheader1 ctermfg=125
-hi VimwikiHeader2 ctermfg=136
-hi VimwikiHeader3 ctermfg=64
-hi VimwikiHeader4 ctermfg=37
-hi VimwikiHeader5 ctermfg=37
-hi VimwikiHeader6 ctermfg=37
+hi vimwikiheader1 ctermfg=125 guifg=#af005f
+hi VimwikiHeader2 ctermfg=136 guifg=#af8700
+hi VimwikiHeader3 ctermfg=64  guifg=#5f8700
+hi VimwikiHeader4 ctermfg=37  guifg=#00afaf
+hi VimwikiHeader5 ctermfg=37  guifg=#00afaf
+hi VimwikiHeader6 ctermfg=37  guifg=#00afaf
 " vimwiki with markdown support
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
