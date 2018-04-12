@@ -100,11 +100,15 @@ set incsearch
 " PANDOC
 "" spell check
 "let g:pandoc#modules#disabled = ["spell"]
-"hi clear SpellBad
-"hi SpellBad ctermfg=Yellow
-"hi clear SpellCap
-"hi SpellCap ctermfg=Blue
-"""other spell checks include SpellRare and SpellLocal
+hi clear
+      \ SpellBad
+      \ SpellCap
+      \ SpellRare
+      \ SpellLocal
+hi SpellBad   cterm=Underline
+hi SpellCap   cterm=Underline
+hi SpellRare  cterm=Underline
+hi SpellLocal cterm=Underline
 "" bibliography
 let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Library/example.bib",
       \"/Users/mli/Google-Drive/Library/GE1.bib",
