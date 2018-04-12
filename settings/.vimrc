@@ -35,9 +35,10 @@ set title
 set cursorline
 set laststatus=2
 set noshowmode
-set background=dark
-colorscheme seoul256
 set term=screen-256color
+set background=dark
+colorscheme gruvbox
+let g:gruvbox_termcolors=16
 
 " line number
 set nu " line number on
@@ -131,7 +132,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme='zenburn'
+let g:airline_theme='gruvbox'
 
 " VIMWIKI
 " header colors

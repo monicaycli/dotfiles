@@ -14,6 +14,7 @@
 	<string>manual</string>
 	<key>Coprocess MRU</key>
 	<array>
+		<string>echo vim /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_1/test.md</string>
 		<string>vim /Users/mli/Google-Drive/Manuscripts/2017_General-Exam_1</string>
 	</array>
 	<key>Custom Color Presets</key>
@@ -36510,7 +36511,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 365 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>519 466 918 381 0 0 1440 878 </string>
+	<string>519 363 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 1440 874 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -36753,13 +36754,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.22745098039215686</real>
+				<real>0.11759774386882782</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.22745098039215686</real>
+				<real>0.11759573966264725</real>
 				<key>Red Component</key>
-				<real>0.22745098039215686</real>
+				<real>0.11759927868843079</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -37259,7 +37260,7 @@
 			<key>Semantic History</key>
 			<dict>
 				<key>action</key>
-				<string>editor</string>
+				<string>best editor</string>
 				<key>editor</key>
 				<string>org.vim.MacVim</string>
 				<key>text</key>
