@@ -2,6 +2,7 @@
 filetype plugin on
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -15,12 +16,15 @@ Plug 'suan/vim-instant-markdown'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
+Plug 'chrisbra/csv.vim'
 call plug#end()
 
 " DISPLAY
