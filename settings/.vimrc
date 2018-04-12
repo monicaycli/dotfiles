@@ -100,7 +100,7 @@ let g:ctrlp_user_command = ['.git',
 map <C-n> :NERDTreeToggle<CR>
 
 " WHITESPACE
-set lcs=tab:\·\ ,trail:·
+set lcs=tab:>·,trail:·,extends:#,nbsp:·
 set list
 set tabstop=2
 set softtabstop=2
