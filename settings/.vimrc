@@ -37,6 +37,7 @@ set laststatus=2
 set noshowmode
 set background=dark
 colorscheme tender
+set term=screen-256color
 
 " line number
 set nu " line number on
