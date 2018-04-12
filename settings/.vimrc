@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'godlygeek/tabular'
 Plug 'kurocode25/mdforvim'
 Plug 'plasticboy/vim-markdown'
@@ -31,7 +32,7 @@ set cursorline
 set laststatus=2
 set noshowmode
 set background=dark
-colorscheme solarized
+colorscheme tender
 
 " line number
 set nu " line number on
@@ -116,8 +117,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_solarized_bg='dark'
-let g:airline_theme='solarized'
+let g:airline_theme='tender'
 
 " VIMWIKI
 " header colors
