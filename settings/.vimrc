@@ -8,7 +8,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'guns/xterm-color-table.vim'
 Plug 'godlygeek/tabular'
-Plug 'kurocode25/mdforvim'
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'scrooloose/nerdcommenter'
@@ -163,8 +162,6 @@ nmap <Leader>wq <Plug>VimwikiVSplitLink
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
-let g:instant_markdown_autostart = 0 " disable autostart
-map <leader>md :InstantMarkdownPreview<CR>
 
 " COPY
 set clipboard=unnamed
