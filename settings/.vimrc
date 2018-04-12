@@ -36,7 +36,7 @@ set cursorline
 set laststatus=2
 set noshowmode
 set background=dark
-colorscheme tender
+colorscheme seoul256
 set term=screen-256color
 
 " line number
@@ -127,7 +127,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme='tender'
+let g:airline_theme='zenburn'
 
 " VIMWIKI
 " header colors
