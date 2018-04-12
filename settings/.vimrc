@@ -109,6 +109,12 @@ set expandtab
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
 autocmd FileType markdown setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
 
+" TEXT LAYOUT
+" Reflow paragraph or selection with `rf` (in normal and visual modes for
+" markdown and tex files, and just visual modes for everything else)
+au BufNewFile,BufRead *.md,*.tex,*.wiki,*.html nnoremap rf gqip
+vnoremap rf gq
+
 " SEARCH
 set gdefault
 set hlsearch
