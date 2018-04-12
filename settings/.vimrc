@@ -148,7 +148,7 @@ nmap <Leader>wq <Plug>VimwikiVSplitLink
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
-let g:instant_markdown_autostart = 0	" disable autostart
+let g:instant_markdown_autostart = 0 " disable autostart
 map <leader>md :InstantMarkdownPreview<CR>
 
 " COPY
