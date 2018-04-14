@@ -51,6 +51,13 @@ map <Leader>nu :set<Space>nu!<Enter>:GitGutterToggle<Enter>
 " toggle show/hide relative line number
 map <Leader>rnu :set<Space>rnu!<Enter>
 
+" vim-gitgutter sign column
+if exists('&signcolumn')  " Vim 7.4.2201
+    set signcolumn=yes
+else
+    let g:gitgutter_sign_column_always = 1
+endif
+
 " split screen settings
 " remap shortcuts
 nnoremap <C-J> <C-W><C-J>
