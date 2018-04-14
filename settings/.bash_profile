@@ -10,6 +10,7 @@ export EDITOR="vim"
 export PATH=~/bin:$PATH
 export PATH=/usr/local/lib:/usr/local/bin:/usr/local/go/bin:$PATH
 export PATH=/usr/local/opt/sqlite/bin:$PATH
+export PATH=/usr/local/opt/ncurses/bin:$PATH
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
