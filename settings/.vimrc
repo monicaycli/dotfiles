@@ -92,6 +92,10 @@ inoremap <Leader>s <C-O>:source ~/.vimrc<CR>
 nnoremap <Leader>] :bn<CR>
 nnoremap <Leader>[ :bN<CR>
 
+" switch between tabs with `\}` and `\{`
+nnoremap <Leader>} :tabnext<CR>
+nnoremap <Leader>{ :tabprevious<CR>
+
 " FILE NAVIGATION
 " change working directory to current file
 set autochdir
