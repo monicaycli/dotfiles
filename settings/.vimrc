@@ -34,7 +34,6 @@ set title
 set cursorline
 set laststatus=2
 set noshowmode
-set term=screen-256color
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_termcolors=16
