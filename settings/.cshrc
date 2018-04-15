@@ -41,6 +41,7 @@ alias .cshrc "vim ~/.cshrc" # change config
 # Open in...
 alias s subl
 alias f "open -a Finder ./"
+alias vim "nvim"
 
 # Navigation
 alias cl "cd \!* ; ls"
