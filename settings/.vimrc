@@ -169,12 +169,12 @@ let g:airline_theme='gruvbox'
 " VIMWIKI
 " header colors
 let g:vimwiki_hl_headers = 1
-hi vimwikiheader1 ctermfg=125 guifg=#af005f
-hi VimwikiHeader2 ctermfg=136 guifg=#af8700
-hi VimwikiHeader3 ctermfg=64  guifg=#5f8700
-hi VimwikiHeader4 ctermfg=37  guifg=#00afaf
-hi VimwikiHeader5 ctermfg=37  guifg=#00afaf
-hi VimwikiHeader6 ctermfg=37  guifg=#00afaf
+hi vimwikiheader1 ctermfg=167 guifg=#fb4934
+hi VimwikiHeader2 ctermfg=214 guifg=#fabd2f
+hi VimwikiHeader3 ctermfg=108 guifg=#8ec07c
+hi VimwikiHeader4 ctermfg=109 guifg=#83a598
+hi VimwikiHeader5 ctermfg=109 guifg=#83a598
+hi VimwikiHeader6 ctermfg=109 guifg=#83a598
 " vimwiki with markdown support
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md', 'syntax': 'markdown'}]
 let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
