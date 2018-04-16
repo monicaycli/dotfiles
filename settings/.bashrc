@@ -40,6 +40,14 @@ alias vim="nvim"
 alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 
 # =========================
+#  PYTHON
+# =========================
+#  conda
+# -------------------------
+function sa() { source activate "$@"; }
+function sd() { source deactivate; }
+
+# =========================
 #  shell
 # =========================
 #  ls
