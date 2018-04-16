@@ -32,7 +32,6 @@ alias caret='~/caret/bin_macosx64/caret5'
 # =========================
 #  EDITOR
 # =========================
-alias s="subl"
 alias vim="nvim"
 
 # =========================
