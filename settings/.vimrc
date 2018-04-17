@@ -192,7 +192,7 @@ nmap <Leader>wq <Plug>VimwikiVSplitLink
 let g:vim_markdown_folding_disabled = 1
 
 " COPY
-set clipboard=unnamed
+vnoremap y "+y
 
 " SYNTASTIC
 set statusline+=%#warningmsg#
