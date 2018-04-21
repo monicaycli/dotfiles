@@ -1,15 +1,19 @@
 {
   "segments": [
     "virtual_env",
+    "time",
     "ssh",
     "cwd",
     "git",
-    "hg",
+    "git_stash",
     "jobs",
+    "read_only",
     "root"
   ],
   "cwd": {
-    "mode": "plain"
+    "max_depth": 10,
+    "max_dir_size": 1,
+    "full_cwd": "true"
     },
-  "theme": "solarized_dark"
+  "theme": "/Users/mli/Google-Drive/Github/powerline-shell/powerline_shell/themes/gruvbox.py"
 }
