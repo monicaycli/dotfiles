@@ -11,9 +11,12 @@
     "root"
   ],
   "cwd": {
-    "max_depth": 10,
-    "max_dir_size": 1,
+    "max_depth": 7,
+    "max_dir_size": 3,
     "full_cwd": "true"
+    },
+  "vcs": {
+    "show_symbol": true
     },
   "theme": "/Users/mli/Google-Drive/Github/powerline-shell/powerline_shell/themes/gruvbox.py"
 }
