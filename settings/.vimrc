@@ -13,6 +13,8 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -128,6 +130,28 @@ vnoremap rf gq
 set gdefault
 set hlsearch
 set incsearch
+
+" AUTO-PAIRS
+let g:AutoPairsFlyMode = 1
+" toggle auto-pairs
+imap π <M-p>
+nmap π <M-p>
+" go to next closed pair
+imap ˜ <M-n>
+nmap ˜ <M-n>
+" fast wrap
+imap ´ <M-e>
+" back insert
+imap ∫ <M-b>
+" move to pair
+imap · <M-(>
+imap ‚ <M-)>
+imap “ <M-[>
+imap ‘ <M-]>
+imap ” <M-{>
+imap ’ <M-}>
+imap Æ <M-">
+imap æ <M-'>
 
 " PANDOC
 "" spell check
