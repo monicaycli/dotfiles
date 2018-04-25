@@ -18,5 +18,5 @@
   "vcs": {
     "show_symbol": true
     },
-  "theme": "/Users/mli/Google-Drive/Github/powerline-shell/powerline_shell/themes/gruvbox.py"
+  "theme": "gruvbox"
 }
