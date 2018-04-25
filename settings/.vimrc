@@ -188,6 +188,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_theme='gruvbox'
+autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " VIMWIKI
 " header colors
