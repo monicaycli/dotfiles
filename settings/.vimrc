@@ -102,11 +102,11 @@ set autochdir
 " wildmenu (search for commands)
 set wildmenu
 set wildmode=longest:list,full
+set wildignore+=*/.git/*
 " ctrlp (search in directory)
-" ignore git stuff
-let g:ctrlp_user_command = ['.git',
-            \ 'cd %s && git ls-files . -co --exclude-standard',
-            \ 'find %s -type f' ]
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_follow_symlinks = 2
+let g:ctrlp_tilde_homedir = 1
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
