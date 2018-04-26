@@ -18,10 +18,26 @@ export PATH=/usr/local/opt/ncurses/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # =========================
+#  DYLD
+# =========================
+export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
+export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/:/usr/local/opt/ruby/lib
+
+
+# =========================
 #  NEUROIMAGING
 # =========================
 # AFNI
 export PATH=~/abin:$PATH
+
+ahdir=$(apsearch -afni_help_dir)
+if [ -f "$ahdir/all_progs.COMP.bash" ]
+then
+   bash "$ahdir/all_progs.COMP.bash"
+fi
+
+# FINK
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
 # OPTSEQ2
 export PATH=~/optseq2:$PATH
@@ -58,9 +74,7 @@ export PATH=/Applications/Eyelink/EDF_Access_API/Example:$PATH
 #  PYTHON
 # =========================
 # Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 # PYTHONPATH
 #export PYTHONPATH=/sw/lib/qt4-mac/lib/python2.7/site-packages${PYTHONPATH}
 #export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
@@ -68,7 +82,8 @@ export PATH
 # =========================
 #  RVM
 # =========================
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Load RVM into a shell session *as a function*
+ [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # =========================
 #  THEFUCK

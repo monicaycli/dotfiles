@@ -16,18 +16,8 @@ alias GE1="tmux a -t GE1"
 # =========================
 #  AFNI
 # =========================
-ahdir=`apsearch -afni_help_dir`
-if [ -f "$ahdir/all_progs.COMP.bash" ]
-then
-   . $ahdir/all_progs.COMP.bash
-fi
-# FINK
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-# DYLD
-export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
-export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/:/usr/local/opt/ruby/lib
 # CARET
-alias caret='~/caret/bin_macosx64/caret5'
+alias caret="~/caret/bin_macosx64/caret5"
 
 # =========================
 #  EDITOR
@@ -44,8 +34,11 @@ alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 # =========================
 #  conda
 # -------------------------
-function sa() { source activate "$@"; }
-function sd() { source deactivate; }
+alias sa="source activate"
+alias sd="source deactivate"
+#  jupyter
+# -------------------------
+alias jn="jupyter notebook"
 
 # =========================
 #  shell
@@ -61,8 +54,8 @@ alias ll="ls -lGp"
 alias ..="cd .." # step back 1 level
 alias ...="cd ../.." # step back 2 levels
 alias back="cd -" # back button
-function cl() { cd "$@" && ls; }
-function md() { mkdir -p "$@" && cd "$_"; }
+function cl() { cd "$1" && ls; }
+function md() { mkdir -p "$1" && cd "$1" || exit; }
 
 #  idiot-proofing overwrites
 # -------------------------
@@ -100,7 +93,8 @@ alias gfs="gf && gs"
 # =========================
 #  MISC.
 # =========================
-function weather() { curl wttr.in/"$@"?m; }
+# check weather
+function weather() { curl wttr.in/"$1"?m; }
 
 # Activity dashboard
 alias t="top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
@@ -114,5 +108,5 @@ if [ "$TERM" != "linux" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# vim
+alias vimrc="vim ~/.vimrc"
