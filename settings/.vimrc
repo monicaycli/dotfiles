@@ -26,6 +26,7 @@ Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'chrisbra/csv.vim'
+Plug 'metakirby5/codi.vim'
 call plug#end()
 
 " DISPLAY
