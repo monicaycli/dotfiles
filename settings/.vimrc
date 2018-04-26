@@ -239,3 +239,7 @@ let g:syntastic_python_checkers = ["py3kwarn","pylama"]
 
 let g:syntastic_sh_checkers = ["shellcheck"]
 let g:syntastic_sh_shellcheck_args = "-x"
+
+" CODI
+nnoremap <Leader>cd :Codi!!<CR>
+inoremap <Leader>cd <C-O>:CodiUpdate<CR>
