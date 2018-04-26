@@ -227,11 +227,15 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ['lintr']
+let g:syntastic_rmd_checkers = ['lintr']
 
-let g:syntastic_python_python_exec = '/Library/Frameworks/Python.framework/Versions/2.7/bin/python2'
-let g:syntastic_python_checkers = ['python']
+let g:syntastic_python_checkers = ["py3kwarn","pylama"]
+
+let g:syntastic_sh_checkers = ["shellcheck"]
+let g:syntastic_sh_shellcheck_args = "-x"
