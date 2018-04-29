@@ -106,6 +106,10 @@ nnoremap <Leader>[ :bN<CR>
 nnoremap <Leader>} :tabnext<CR>
 nnoremap <Leader>{ :tabprevious<CR>
 
+" horizontal scrolls
+noremap <C-L> 20zl " scroll 20 characters to the right
+noremap <C-H> 20zh " scroll 20 characters to the left
+
 " FILE NAVIGATION
 " change working directory to current file
 set autochdir
