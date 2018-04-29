@@ -37,6 +37,15 @@ set title
 set cursorline
 set laststatus=2
 set noshowmode
+
+" highlight overlength characters (>80)
+set nowrap
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=237
+  autocmd BufEnter * match OverLength /\%>80v.\+/
+augroup END
+
+" colorscheme
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_termcolors=16
