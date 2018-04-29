@@ -244,6 +244,10 @@ let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_mode_map = {
+    \ "mode": "passive",
+    \ "active_filetypes": ["python", "r", "rmd","sh","markdown"]}
+
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ['lintr']
 let g:syntastic_rmd_checkers = ['lintr']
@@ -252,6 +256,8 @@ let g:syntastic_python_checkers = ["py3kwarn","pylama"]
 
 let g:syntastic_sh_checkers = ["shellcheck"]
 let g:syntastic_sh_shellcheck_args = "-x"
+
+let g:syntastic_markdown_checkers = ["proselint","textlint"]
 
 " CODI
 nnoremap <Leader>cd :Codi!!<CR>
