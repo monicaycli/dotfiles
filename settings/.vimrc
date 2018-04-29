@@ -167,8 +167,9 @@ imap Æ <M-">
 imap æ <M-'>
 
 " PANDOC
-"" spell check
-"let g:pandoc#modules#disabled = ["spell"]
+" disable conceal
+let g:pandoc#syntax#conceal#use = 0
+" spell check
 hi clear
       \ SpellBad
       \ SpellCap
@@ -178,19 +179,19 @@ hi SpellBad   cterm=Underline
 hi SpellCap   cterm=Underline
 hi SpellRare  cterm=Underline
 hi SpellLocal cterm=Underline
-"" bibliography
+" bibliography
 let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Library/example.bib",
       \"/Users/mli/Google-Drive/Library/GE1.bib",
       \"/Users/mli/Google-Drive/Library/GE2.bib",
       \"/Users/mli/Google-Drive/Library/SUBCAT.bib"]
 let g:pandoc#biblio#use_bibtool = 1
 let g:pandoc#completion#bib#mode = 'citeproc'
-"" pdf conversion
+" pdf conversion
 let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
 map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
 map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
-"" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax
+" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
 let g:pandoc#filetypes#pandoc_markdown = 0
 
