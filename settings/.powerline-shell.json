@@ -4,10 +4,10 @@
     "time",
     "ssh",
     "cwd",
-    "git",
-    "git_stash",
     "jobs",
     "read_only",
+    "git",
+    "git_stash",
     "root"
   ],
   "cwd": {
