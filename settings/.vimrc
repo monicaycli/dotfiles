@@ -146,7 +146,6 @@ set hlsearch
 set incsearch
 
 " AUTO-PAIRS
-let g:AutoPairsFlyMode = 1
 " toggle auto-pairs
 imap π <M-p>
 nmap π <M-p>
