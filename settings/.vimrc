@@ -229,6 +229,7 @@ nmap <Leader>wq <Plug>VimwikiVSplitLink
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
+nnoremap <Leader>mm :setfiletype markdown<CR>
 
 " COPY
 vnoremap y "+y
