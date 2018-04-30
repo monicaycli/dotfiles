@@ -181,10 +181,15 @@ hi SpellCap   cterm=Underline
 hi SpellRare  cterm=Underline
 hi SpellLocal cterm=Underline
 " bibliography
-let g:pandoc#biblio#bibs = ["/Users/mli/Google-Drive/Library/example.bib",
-      \"/Users/mli/Google-Drive/Library/GE1.bib",
-      \"/Users/mli/Google-Drive/Library/GE2.bib",
-      \"/Users/mli/Google-Drive/Library/SUBCAT.bib"]
+let g:pandoc#biblio#bibs = [
+      \"/Users/mli/Google-Drive/Library/CFC.bib",
+      \"/Users/mli/Google-Drive/Library/CSWR.bib",
+      \"/Users/mli/Google-Drive/Library/EEG.bib",
+      \"/Users/mli/Google-Drive/Library/FEEDBACK.bib",
+      \"/Users/mli/Google-Drive/Library/MRI_Analyses.bib",
+      \"/Users/mli/Google-Drive/Library/Manuscripts.bib",
+      \"/Users/mli/Google-Drive/Library/SUBCAT.bib"
+      \]
 let g:pandoc#biblio#use_bibtool = 1
 let g:pandoc#completion#bib#mode = 'citeproc'
 " pdf conversion
