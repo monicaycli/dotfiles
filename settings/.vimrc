@@ -27,6 +27,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'chrisbra/csv.vim'
 Plug 'metakirby5/codi.vim'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
 " DISPLAY
@@ -263,3 +264,14 @@ let g:syntastic_markdown_checkers = ["proselint","textlint"]
 " CODI
 nnoremap <Leader>cd :Codi!!<CR>
 inoremap <Leader>cd <C-O>:CodiUpdate<CR>
+
+" YOUCOMPLETEME
+let g:ycm_key_invoke_completion = '<M-Y>'
+imap ¥ <M-Y>
+let g:ycm_filetype_whitelist = {
+      \ 'python': 1,
+      \ 'r': 1,
+      \ 'rmd': 1,
+      \ 'sh': 1,
+      \ 'matlab': 1
+      \ }
