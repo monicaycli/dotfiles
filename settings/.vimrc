@@ -228,6 +228,8 @@ let g:pandoc#filetypes#pandoc_markdown = 0
 
 " AIRLINE
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 2 " splits and tab number
+let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
