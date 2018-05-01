@@ -1,34 +1,41 @@
 " PLUGINS
 filetype plugin on
 call plug#begin()
+" git
 Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
+Plug 'tpope/vim-fugitive'
+" handy coding tools
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'valloric/youcompleteme'
+Plug 'metakirby5/codi.vim'
+" navigation
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+" syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-syntastic/syntastic'
+" colors & themes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'guns/xterm-color-table.vim'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'mzlogin/vim-markdown-toc'
-Plug 'scrooloose/nerdcommenter'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
-Plug 'vimwiki/vimwiki'
+" plain text
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'mzlogin/vim-markdown-toc'
+Plug 'lervag/vimtex'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
-Plug 'lervag/vimtex'
-Plug 'vim-syntastic/syntastic'
-Plug 'scrooloose/nerdtree'
 Plug 'chrisbra/csv.vim'
-Plug 'metakirby5/codi.vim'
-Plug 'valloric/youcompleteme'
+" applications
 Plug 'itchyny/calendar.vim'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " DISPLAY
