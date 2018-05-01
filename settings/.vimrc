@@ -108,13 +108,13 @@ if exists('$TMUX')
 endif
 
 " VIM NAVIGATION
-" Edit .vimrc in separate tab with '\rc'
-nnoremap <Leader>rc :tabe ~/.vimrc<CR>
-inoremap <Leader>rc <C-O>:tabe ~/.vimrc<CR>
+" Edit $MYVIMRC in separate tab with '\rc'
+nnoremap <Leader>rc :tabe $MYVIMRC<CR>
+inoremap <Leader>rc <C-O>:tabe $MYVIMRC<CR>
 
-" Source .vimrc with '\s'
-nnoremap <Leader>s :source ~/.vimrc<CR>
-inoremap <Leader>s <C-O>:source ~/.vimrc<CR>
+" Source $MYVIMRC with '\s'
+nnoremap <Leader>s :so $MYVIMRC \| AirlineRefresh \| AirlineRefresh \| e<CR>
+inoremap <Leader>s <C-O>:so $MYVIMRC \| AirlineRefresh \| AirlineRefresh \| e<CR>
 
 " switch between buffers with `\]` and `\[`
 nnoremap <Leader>] :bn<CR>
