@@ -246,17 +246,37 @@ hi VimwikiHeader3 ctermfg=108 guifg=#8ec07c
 hi VimwikiHeader4 ctermfg=109 guifg=#83a598
 hi VimwikiHeader5 ctermfg=109 guifg=#83a598
 hi VimwikiHeader6 ctermfg=109 guifg=#83a598
+
+" vimwiki list
+let wiki_0 = {}
+let wiki_0.path = '~/Google-Drive/wikibase'
+let wiki_0.ext = '.md'
+let wiki_0.syntax = 'markdown'
+
+let wiki_1 = {}
+let wiki_1.path = '~/Google-Drive/vimwiki'
+let wiki_1.ext = '.md'
+let wiki_1.syntax = 'markdown'
+
+let g:vimwiki_list = [ wiki_0, wiki_1 ]
+
 " vimwiki with markdown support
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md', 'syntax': 'markdown'}]
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:vimwiki_ext2syntax = {
+      \ '.md': 'markdown',
+      \ '.markdown': 'markdown',
+      \ '.mdown': 'markdown'
+      \ }
+
 " vimwiki tag settings
 map <Leader>vst :VimwikiSearchTags
 map <Leader>vgt :VimwikiGenerateTags<Enter>
 map <Leader>vrt :VimwikiRebuildTags<Enter>
 map <Leader>lo :lopen<Enter>
+
 " todo list settings
 map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
+
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
 
