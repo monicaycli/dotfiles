@@ -50,12 +50,14 @@ set nowrap
 
 " highlight overlength characters (>80)
 let g:overlength_highlight = 1
-if g:overlength_highlight == 1
-    augroup vimrc_autocmds
-        autocmd BufEnter * highlight OverLength ctermbg = 237
-        autocmd BufEnter * match OverLength /\%>80v.\+/
-    augroup END
-endif
+augroup overlength_highlight
+    if g:overlength_highlight == 1
+        au BufEnter * highlight OverLength ctermbg = 237
+        au BufEnter * match OverLength /\%>80v.\+/
+    elseif g:overlength_highlight == 0
+        au!
+    endif
+augroup END
 
 function! ToggleOverLengthHighlight()
     if g:overlength_highlight == 0
@@ -149,8 +151,8 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
-autocmd FileType markdown setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
+au FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
+au FileType markdown setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent smarttab
 
 " TEXT LAYOUT
 " Reflow paragraph or selection with `rf` (in normal and visual modes for
@@ -227,7 +229,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_theme='gruvbox'
-autocmd BufDelete * call airline#extensions#tabline#buflist#invalidate()
+au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " VIMWIKI
 " header colors
