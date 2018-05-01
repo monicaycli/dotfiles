@@ -212,8 +212,8 @@ let g:pandoc#completion#bib#mode = 'citeproc'
 " pdf conversion
 let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
-map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Github/styles/apa.csl<Enter>
+map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Manuscripts/apa_ML.csl<CR>
+map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Manuscripts/apa_ML.csl<CR>
 " enable pandoc functionality for markdown files while disabling pandoc's markdown syntax
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
 let g:pandoc#filetypes#pandoc_markdown = 0
