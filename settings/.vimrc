@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'chrisbra/csv.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'valloric/youcompleteme'
+Plug 'itchyny/calendar.vim'
 call plug#end()
 
 " DISPLAY
@@ -249,6 +250,10 @@ map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
+
+" CALENDAR
+let g:calendar_google_calendar = 1
+let g:calendar_first_day = "monday"
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
