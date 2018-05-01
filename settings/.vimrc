@@ -74,7 +74,6 @@ nmap Ó <M-H>
 " colorscheme
 set background=dark
 colorscheme gruvbox
-let g:gruvbox_termcolors=16
 if has('gui_running')
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
 endif
