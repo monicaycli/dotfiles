@@ -38,13 +38,30 @@ set title
 set cursorline
 set laststatus=2
 set noshowmode
+set nowrap
 
 " highlight overlength characters (>80)
-set nowrap
-augroup vimrc_autocmds
-  autocmd BufEnter * highlight OverLength ctermbg=237
-  autocmd BufEnter * match OverLength /\%>80v.\+/
-augroup END
+let g:overlength_highlight = 1
+if g:overlength_highlight == 1
+    augroup vimrc_autocmds
+        autocmd BufEnter * highlight OverLength ctermbg = 237
+        autocmd BufEnter * match OverLength /\%>80v.\+/
+    augroup END
+endif
+
+function! ToggleOverLengthHighlight()
+    if g:overlength_highlight == 0
+        hi OverLength ctermbg = 237
+        match OverLength /\%>80v.\+/
+        let g:overlength_highlight = 1
+    else
+        hi clear OverLength
+        let g:overlength_highlight = 0
+    endif
+endfunction
+
+nnoremap <M-H> :call ToggleOverLengthHighlight()<CR>
+nmap Ó <M-H>
 
 " colorscheme
 set background=dark
