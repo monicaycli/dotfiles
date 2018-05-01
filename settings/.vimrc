@@ -261,9 +261,9 @@ let g:vimwiki_ext2syntax = {
 
 " vimwiki tag settings
 map <Leader>vst :VimwikiSearchTags
-map <Leader>vgt :VimwikiGenerateTags<Enter>
-map <Leader>vrt :VimwikiRebuildTags<Enter>
-map <Leader>lo :lopen<Enter>
+map <Leader>vgt :VimwikiGenerateTags<CR>
+map <Leader>vrt :VimwikiRebuildTags<CR>
+map <Leader>lo :lopen<CR>
 
 " todo list settings
 map <Leader>tt <Plug>VimwikiToggleListItem
