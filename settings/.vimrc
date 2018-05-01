@@ -109,11 +109,11 @@ if exists('$TMUX')
 endif
 
 " VIM NAVIGATION
-" Edit init.vim in separate tab with '\rc'
+" Edit .vimrc in separate tab with '\rc'
 nnoremap <Leader>rc :tabe ~/.vimrc<CR>
 inoremap <Leader>rc <C-O>:tabe ~/.vimrc<CR>
 
-" Source init.vim with '\s'
+" Source .vimrc with '\s'
 nnoremap <Leader>s :source ~/.vimrc<CR>
 inoremap <Leader>s <C-O>:source ~/.vimrc<CR>
 
