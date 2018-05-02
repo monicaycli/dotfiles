@@ -1,7 +1,7 @@
 # =========================
 #  QUICK CD
 # =========================
-alias vimwiki="cd $HOME/vimwiki"
+alias vimwiki="cd $HOME/Google-Drive/wikibase"
 export GD="$HOME/Google-Drive"
 export FS="/Volumes/GoogleDrive/My\ Drive"
 alias gd="cd $GD"
