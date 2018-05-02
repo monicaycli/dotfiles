@@ -231,49 +231,6 @@ endif
 let g:airline_theme='gruvbox'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
-" VIMWIKI
-" header colors
-let g:vimwiki_hl_headers = 1
-hi vimwikiheader1 ctermfg=167 guifg=#fb4934
-hi VimwikiHeader2 ctermfg=214 guifg=#fabd2f
-hi VimwikiHeader3 ctermfg=108 guifg=#8ec07c
-hi VimwikiHeader4 ctermfg=109 guifg=#83a598
-hi VimwikiHeader5 ctermfg=109 guifg=#83a598
-hi VimwikiHeader6 ctermfg=109 guifg=#83a598
-
-" vimwiki list
-let wiki_0 = {}
-let wiki_0.path = '~/Google-Drive/wikibase'
-let wiki_0.ext = '.md'
-let wiki_0.syntax = 'markdown'
-
-let wiki_1 = {}
-let wiki_1.path = '~/Google-Drive/vimwiki'
-let wiki_1.ext = '.md'
-let wiki_1.syntax = 'markdown'
-
-let g:vimwiki_list = [ wiki_0, wiki_1 ]
-
-" vimwiki with markdown support
-let g:vimwiki_ext2syntax = {
-      \ '.md': 'markdown',
-      \ '.markdown': 'markdown',
-      \ '.mdown': 'markdown'
-      \ }
-
-" vimwiki tag settings
-map <Leader>vst :VimwikiSearchTags
-map <Leader>vgt :VimwikiGenerateTags<CR>
-map <Leader>vrt :VimwikiRebuildTags<CR>
-map <Leader>lo :lopen<CR>
-
-" todo list settings
-map <Leader>tt <Plug>VimwikiToggleListItem
-let g:vimwiki_listsyms = ' .oOx'
-
-" navigation settings
-nmap <Leader>wq <Plug>VimwikiVSplitLink
-
 " CALENDAR
 let g:calendar_google_calendar = 1
 let g:calendar_first_day = "monday"
@@ -326,3 +283,48 @@ let g:ycm_filetype_whitelist = {
       \ 'sh': 1,
       \ 'matlab': 1
       \ }
+
+" VIMWIKI
+" header colors
+let g:vimwiki_hl_headers = 1
+hi vimwikiheader1 ctermfg=167 guifg=#fb4934
+hi VimwikiHeader2 ctermfg=214 guifg=#fabd2f
+hi VimwikiHeader3 ctermfg=108 guifg=#8ec07c
+hi VimwikiHeader4 ctermfg=109 guifg=#83a598
+hi VimwikiHeader5 ctermfg=109 guifg=#83a598
+hi VimwikiHeader6 ctermfg=109 guifg=#83a598
+
+" vimwiki with markdown support
+let g:vimwiki_ext2syntax = {
+      \ '.md': 'markdown',
+      \ '.markdown': 'markdown',
+      \ '.mdown': 'markdown'
+      \ }
+
+" vimwiki tag settings
+map <Leader>vst :VimwikiSearchTags
+map <Leader>vgt :VimwikiGenerateTags<CR>
+map <Leader>vrt :VimwikiRebuildTags<CR>
+map <Leader>lo :lopen<CR>
+
+" todo list settings
+map <Leader>tt <Plug>VimwikiToggleListItem
+let g:vimwiki_listsyms = ' .oOx'
+
+" navigation settings
+nmap <Leader>wq <Plug>VimwikiVSplitLink
+
+" vimwiki list
+let g:vimwiki_list = [
+      \ {'path': '~/Google-Drive/wikibase/',    'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/01*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/02*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/03*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/04*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/05*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/06*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/07*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/08*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/09*', 'ext': '.md', 'syntax': 'markdown'},
+      \ {'path': '~/Google-Drive/wikibase/10*', 'ext': '.md', 'syntax': 'markdown'},
+      \ ]
