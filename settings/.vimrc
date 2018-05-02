@@ -80,6 +80,9 @@ if has('gui_running')
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
 endif
 
+" line number
+set nu " line number on
+set rnu " relative line number on
 
 " vim-gitgutter sign column
 if exists('&signcolumn')  " Vim 7.4.2201
