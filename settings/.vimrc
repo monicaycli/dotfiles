@@ -1,6 +1,9 @@
 " PLUGINS
 filetype plugin on
 call plug#begin()
+" applications
+Plug 'itchyny/calendar.vim'
+Plug 'vimwiki/vimwiki'
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
@@ -33,9 +36,6 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'chrisbra/csv.vim'
-" applications
-Plug 'itchyny/calendar.vim'
-Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " DISPLAY
