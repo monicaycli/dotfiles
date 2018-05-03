@@ -333,3 +333,7 @@ let g:vimwiki_list = [
       \ {'path': '~/Google-Drive/wikibase/09*', 'ext': '.md', 'syntax': 'markdown'},
       \ {'path': '~/Google-Drive/wikibase/10*', 'ext': '.md', 'syntax': 'markdown'}
       \ ]
+
+" PYTHON
+let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/2.7/bin/python2'
+let g:python3_host_prog = '//anaconda/envs/py36/bin/python3'
