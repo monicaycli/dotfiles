@@ -32,7 +32,7 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'lervag/vimtex'
 Plug 'chrisbra/csv.vim'
 " applications
-Plug 'itchyny/calendar.vim'
+Plug 'mattn/calendar-vim'
 Plug 'vimwiki/vimwiki'
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
@@ -235,8 +235,10 @@ let g:airline_theme='gruvbox'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " CALENDAR
-let g:calendar_google_calendar = 1
-let g:calendar_first_day = "monday"
+let g:calendar_mark = 'left-fit'
+let g:calendar_monday = 1
+let g:calendar_datetime = 'statusline'
+let g:calendar_number_of_months = 4
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
