@@ -200,7 +200,6 @@ hi clear
       \ SpellRare
       \ SpellLocal
 hi SpellBad   cterm=Underline
-hi SpellCap   cterm=Underline
 hi SpellRare  cterm=Underline
 hi SpellLocal cterm=Underline
 " bibliography
