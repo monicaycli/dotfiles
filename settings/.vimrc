@@ -1,9 +1,6 @@
 " PLUGINS
 filetype plugin on
 call plug#begin()
-" applications
-Plug 'itchyny/calendar.vim'
-Plug 'vimwiki/vimwiki'
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
@@ -20,6 +17,7 @@ Plug 'scrooloose/nerdtree'
 " syntax
 Plug 'sheerun/vim-polyglot'
 "Plug 'vim-syntastic/syntastic'
+Plug 'vim-pandoc/vim-rmarkdown'
 " colors & themes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -32,10 +30,13 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'lervag/vimtex'
+Plug 'chrisbra/csv.vim'
+" applications
+Plug 'itchyny/calendar.vim'
+Plug 'vimwiki/vimwiki'
+" pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'vim-pandoc/vim-rmarkdown'
-Plug 'chrisbra/csv.vim'
 call plug#end()
 
 " DISPLAY
