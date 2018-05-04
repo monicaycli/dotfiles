@@ -19,7 +19,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 " syntax
 Plug 'sheerun/vim-polyglot'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 " colors & themes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -245,32 +245,32 @@ nnoremap <Leader>mm :setfiletype markdown<CR>
 " COPY
 vnoremap y "+y
 
-" SYNTASTIC
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"" SYNTASTIC
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_loc_list_height = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_loc_list_height = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
-let g:syntastic_mode_map = {
-    \ "mode": "passive",
-    \ "active_filetypes": ["python", "r", "rmd", "sh", "markdown"]
-    \ }
+"let g:syntastic_mode_map = {
+    "\ "mode": "passive",
+    "\ "active_filetypes": ["python", "r", "rmd", "sh", "markdown"]
+    "\ }
 
-let g:syntastic_enable_r_lintr_checker = 1
-let g:syntastic_r_checkers = ['lintr']
-let g:syntastic_rmd_checkers = ['lintr']
+"let g:syntastic_enable_r_lintr_checker = 1
+"let g:syntastic_r_checkers = ['lintr']
+"let g:syntastic_rmd_checkers = ['lintr']
 
-let g:syntastic_python_checkers = ["py3kwarn", "pylama"]
+"let g:syntastic_python_checkers = ["py3kwarn", "pylama"]
 
-let g:syntastic_sh_checkers = ["shellcheck"]
-let g:syntastic_sh_shellcheck_args = "-x"
+"let g:syntastic_sh_checkers = ["shellcheck"]
+"let g:syntastic_sh_shellcheck_args = "-x"
 
-let g:syntastic_markdown_checkers = ["proselint", "textlint"]
+"let g:syntastic_markdown_checkers = ["proselint", "textlint"]
 
 " CODI
 nnoremap <Leader>cd :Codi!!<CR>
