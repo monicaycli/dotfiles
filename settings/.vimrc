@@ -297,13 +297,6 @@ hi VimwikiHeader4 ctermfg=109 guifg=#83a598
 hi VimwikiHeader5 ctermfg=109 guifg=#83a598
 hi VimwikiHeader6 ctermfg=109 guifg=#83a598
 
-" vimwiki with markdown support
-let g:vimwiki_ext2syntax = {
-      \ '.md': 'markdown',
-      \ '.markdown': 'markdown',
-      \ '.mdown': 'markdown'
-      \ }
-
 " vimwiki tag settings
 map <Leader>vst :VimwikiSearchTags
 map <Leader>vgt :VimwikiGenerateTags<CR>
@@ -314,8 +307,22 @@ map <Leader>lo :lopen<CR>
 map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
 
+" quick insert today's date as heading
+nnoremap <Leader>dd :put='# '.strftime('%Y-%m-%d')<CR>
+inoremap <Leader>dd :put='# '.strftime('%Y-%m-%d')<CR>
+
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
+
+" auto change directory
+let g:vimwiki_auto_chdir = 1
+
+" vimwiki with markdown support
+let g:vimwiki_ext2syntax = {
+      \ '.md': 'markdown',
+      \ '.markdown': 'markdown',
+      \ '.mdown': 'markdown'
+      \ }
 
 " vimwiki list
 let g:vimwiki_list = [
