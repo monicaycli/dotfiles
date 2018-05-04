@@ -305,6 +305,9 @@ map <Leader>vgt :VimwikiGenerateTags<CR>
 map <Leader>vrt :VimwikiRebuildTags<CR>
 map <Leader>lo :lopen<CR>
 
+" make list
+noremap glo :VimwikiChangeSymbolTo *<CR>
+
 " todo list settings
 map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
