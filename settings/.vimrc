@@ -11,9 +11,6 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'valloric/youcompleteme'
 Plug 'metakirby5/codi.vim'
-" navigation
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
 " syntax
 Plug 'sheerun/vim-polyglot'
 "Plug 'vim-syntastic/syntastic'
@@ -37,6 +34,9 @@ Plug 'vimwiki/vimwiki'
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+" navigation
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " DISPLAY
