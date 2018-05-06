@@ -239,6 +239,13 @@ let g:calendar_mark = 'left-fit'
 let g:calendar_monday = 1
 let g:calendar_datetime = 'statusline'
 let g:calendar_number_of_months = 4
+" open calendar on the right, set width, and recenter
+function! OptimalCalVR()
+  call calendar#show(3)
+  vertical:res +7
+  call calendar#show(3)
+endfunction
+nnoremap <Leader>calr :call OptimalCalVR()<CR>
 
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
