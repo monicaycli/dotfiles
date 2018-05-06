@@ -50,7 +50,7 @@ set noshowmode
 set nowrap
 
 " highlight overlength characters (>80)
-let g:overlength_highlight = 1
+let g:overlength_highlight = 0
 augroup overlength_highlight
     if g:overlength_highlight == 1
         au BufEnter * highlight OverLength ctermbg = 237
