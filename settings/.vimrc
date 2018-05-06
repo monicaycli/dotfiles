@@ -320,8 +320,8 @@ map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
 
 " quick insert today's date as heading
-nnoremap <Leader>dd :put='# '.strftime('%Y-%m-%d')<CR>
-inoremap <Leader>dd :put='# '.strftime('%Y-%m-%d')<CR>
+nnoremap <Leader>dd :put!='# '.strftime('%Y-%m-%d')<CR>
+inoremap <Leader>dd :put!='# '.strftime('%Y-%m-%d')<CR>
 
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
