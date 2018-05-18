@@ -15,6 +15,7 @@ Plug 'metakirby5/codi.vim'
 Plug 'sheerun/vim-polyglot'
 "Plug 'vim-syntastic/syntastic'
 Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'darfink/vim-plist'
 " colors & themes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -77,8 +78,8 @@ nmap Ó <M-H>
 " colorscheme
 set background=dark
 colorscheme gruvbox
-if has('gui_running')
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+if has("gui_vimr")
+  set termguicolors
 endif
 
 " line number
@@ -321,7 +322,6 @@ let g:vimwiki_listsyms = ' .oOx'
 
 " quick insert today's date as heading
 nnoremap <Leader>dd :put!='# '.strftime('%Y-%m-%d')<CR>
-inoremap <Leader>dd :put!='# '.strftime('%Y-%m-%d')<CR>
 
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
