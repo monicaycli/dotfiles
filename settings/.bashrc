@@ -90,7 +90,7 @@ alias gpom="git push origin master"
 alias gf="git fetch origin"
 alias gfs="gf && gs"
 # git-summary
-alias git-summary="/Users/mli/Google-Drive/Github/git-summary/git-summary"
+alias git-summary="/Users/mli/Google-Drive/Github/term_tools/git-summary/git-summary"
 alias gsl="git-summary -l"
 alias gsd="git-summary -d"
 
