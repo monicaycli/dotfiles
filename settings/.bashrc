@@ -93,6 +93,8 @@ alias gfs="gf && gs"
 alias git-summary="/Users/mli/Google-Drive/Github/term_tools/git-summary/git-summary"
 alias gsl="git-summary -l"
 alias gsd="git-summary -d"
+# git-completion.bash
+source ~/.git-completion.bash
 
 # =========================
 #  MISC.
