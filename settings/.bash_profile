@@ -44,11 +44,6 @@ export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # =========================
-#  THEFUCK
-# =========================
-eval $(thefuck --alias)
-
-# =========================
 #  SOURCE .bashrc
 # =========================
 source ~/.bashrc
