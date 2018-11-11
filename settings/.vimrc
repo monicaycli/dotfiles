@@ -284,9 +284,6 @@ noremap glo :VimwikiChangeSymbolTo *<CR>
 map <Leader>tt <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' .oOx'
 
-" quick insert today's date as heading
-nnoremap <Leader>dd :put!='# '.strftime('%Y-%m-%d')<CR>
-
 " navigation settings
 nmap <Leader>wq <Plug>VimwikiVSplitLink
 
@@ -303,18 +300,51 @@ let g:vimwiki_ext2syntax = {
 " vimwiki list
 let g:vimwiki_list = [
       \ {'path': '~/Google-Drive/wikibase/',
-      \ 'ext': '.md', 'syntax': 'markdown',
-      \ 'diary_rel_path': 'worklog/', 'diary_index': 'index', 'diary_header': 'Work Log'},
-      \ {'path': '~/Google-Drive/wikibase/01*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/02*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/03*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/04*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/05*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/06*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/07*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/08*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/09*', 'ext': '.md', 'syntax': 'markdown'},
-      \ {'path': '~/Google-Drive/wikibase/10*', 'ext': '.md', 'syntax': 'markdown'}
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown',
+      \ 'diary_rel_path': 'worklog/',
+      \ 'diary_index': 'index',
+      \ 'diary_header': 'Work Log'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/01*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/02*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/03*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/04*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/05*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/06*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/07*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/08*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/09*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
+      \
+      \ {'path': '~/Google-Drive/wikibase/10*',
+      \ 'ext': '.md',
+      \ 'syntax': 'markdown'},
       \ ]
 
 " PYTHON
