@@ -8,10 +8,6 @@ alias gd="cd $GD"
 alias fs="cd $FS"
 alias dot="cd $GD/Github/dotfiles"
 alias bib="cd $GD/Library"
-alias subcat="cd $GD/Manuscripts/2017_Subcat"
-alias ge1="cd $GD/Manuscripts/2017_General-Exam_1"
-alias ge2="cd $GD/Manuscripts/2017_General-Exam_2"
-alias GE1="tmux a -t GE1"
 
 # =========================
 #  EDITOR
