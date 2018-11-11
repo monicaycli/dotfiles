@@ -14,12 +14,6 @@ alias ge2="cd $GD/Manuscripts/2017_General-Exam_2"
 alias GE1="tmux a -t GE1"
 
 # =========================
-#  AFNI
-# =========================
-# CARET
-alias caret="~/caret/bin_macosx64/caret5"
-
-# =========================
 #  EDITOR
 # =========================
 # vim

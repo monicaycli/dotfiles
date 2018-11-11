@@ -23,52 +23,10 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
 export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/:/usr/local/opt/ruby/lib
 
-
-# =========================
-#  NEUROIMAGING
-# =========================
-# AFNI
-export PATH=~/abin:$PATH
-
-ahdir=$(apsearch -afni_help_dir)
-if [ -f "$ahdir/all_progs.COMP.bash" ]
-then
-   bash "$ahdir/all_progs.COMP.bash"
-fi
-
-# FINK
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
-
-# OPTSEQ2
-export PATH=~/optseq2:$PATH
-
-# CARET
-export PATH=~/caret/bin_macosx64:$PATH
-
-# FREESURFER
-export FREESURFER_HOME=/Applications/freesurfer
-export FREESURFER_USER_HOME=$HOME/freesurfer
-export SUBJECTS_DIR=$FREESURFER_USER_HOME/subjects
-export FUNCTIONALS_DIR=$FREESURFER_USER_HOME/sessions
-export TUTORIAL_DATA=/Users/mli/HPC/fs_tutorial_data
-export FS_FREESURFERENV_NO_OUTPUT=TRUE
-source $FREESURFER_HOME/FreeSurferEnv.sh
-
-# FSL Setup
-FSLDIR=/usr/local/fsl
-PATH=${FSLDIR}/bin:${PATH}
-export FSLDIR PATH
-. ${FSLDIR}/etc/fslconf/fsl.sh
-
 # =========================
 #  ANACONDA
 # =========================
 export PATH=//anaconda/bin:$PATH
-
-# =========================
-#  EYE TRACKING
-# =========================
-export PATH=/Applications/Eyelink/EDF_Access_API/Example:$PATH
 
 # =========================
 #  PYTHON
