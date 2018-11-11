@@ -18,7 +18,7 @@ Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'darfink/vim-plist'
 " colors & themes
 Plug 'flazz/vim-colorschemes'
-Plug 'rafi/awesome-vim-colorschemes'
+Plug 'chriskempson/base16-vim'
 Plug 'guns/xterm-color-table.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -40,6 +40,11 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 call plug#end()
 
+" COPY
+vnoremap y "+y
+" enable mouse
+set mouse=a
+
 " DISPLAY
 syntax on
 set nocompatible
@@ -51,7 +56,7 @@ set noshowmode
 set nowrap
 
 " highlight overlength characters (>80)
-let g:overlength_highlight = 0
+let g:overlength_highlight = 1
 augroup overlength_highlight
     if g:overlength_highlight == 1
         au BufEnter * highlight OverLength ctermbg = 237
@@ -73,13 +78,18 @@ function! ToggleOverLengthHighlight()
 endfunction
 
 nnoremap <M-H> :call ToggleOverLengthHighlight()<CR>
-nmap Ó <M-H>
+nmap Ó <M-H> "alt+shift+h
 
 " colorscheme
 set background=dark
 colorscheme gruvbox
 if has("gui_vimr")
   set termguicolors
+endif
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
 
 " line number
@@ -103,15 +113,17 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-" change cursor shape between insert and normal mode in iTerm2.app
-if $TERM_PROGRAM =~ 'iTerm'
-    let &t_SI = '\<Esc>]50;CursorShape=1\x7' " Vertical bar in insert mode
-    let &t_EI = '\<Esc>]50;CursorShape=0\x7' " Block in normal mode
+" CURSOR SHAPE
+if $TERM =~ "xterm"
+  let &t_SI = "\<Esc>[6 q"
+  let &t_SR = "\<Esc>[4 q"
+  let &t_EI = "\<Esc>[2 q"
 endif
-" change cursor between insert and normal mode in tmux
+
 if exists('$TMUX')
-    let &t_SI = '\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\'
-    let &t_EI = '\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\'
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 endif
 
 " VIM NAVIGATION
@@ -150,7 +162,9 @@ let g:ctrlp_tilde_homedir = 1
 map <C-n> :NERDTreeToggle<CR>
 
 " WHITESPACE
-set lcs=tab:»·,trail:~,extends:>,precedes:<,nbsp:·,eol:$
+if $TERM != "xterm"
+  set lcs=tab:»·,trail:~,extends:>,precedes:<,nbsp:·,eol:$
+endif
 set list
 set tabstop=2
 set softtabstop=2
@@ -232,7 +246,7 @@ let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_theme='gruvbox'
+let g:airline_theme='minimalist'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
 " CALENDAR
@@ -251,9 +265,6 @@ nnoremap <Leader>calr :call OptimalCalVR()<CR>
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
 nnoremap <Leader>mm :setfiletype markdown<CR>
-
-" COPY
-vnoremap y "+y
 
 "" SYNTASTIC
 "set statusline+=%#warningmsg#
