@@ -9,9 +9,10 @@
 	token = !security find-internet-password -a monicaycli -s github.com -l 'ghi token' -w
 
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 [core]
 	excludesfile = ~/.gitignore_global
