@@ -202,6 +202,10 @@ imap ’ <M-}>
 imap Æ <M-">
 imap æ <M-'>
 
+" MARKDOWN
+let g:vim_markdown_folding_disabled = 1
+nnoremap <Leader>mm :setfiletype markdown<CR>
+
 " PANDOC
 " disable conceal
 let g:pandoc#syntax#conceal#use = 0
@@ -214,24 +218,8 @@ hi clear
 hi SpellBad   cterm=Underline
 hi SpellRare  cterm=Underline
 hi SpellLocal cterm=Underline
-" bibliography
-let g:pandoc#biblio#bibs = [
-      \'/Users/mli/Google-Drive/Library/CFC.bib',
-      \'/Users/mli/Google-Drive/Library/CSWR.bib',
-      \'/Users/mli/Google-Drive/Library/EEG.bib',
-      \'/Users/mli/Google-Drive/Library/FEEDBACK.bib',
-      \'/Users/mli/Google-Drive/Library/MRI_Analyses.bib',
-      \'/Users/mli/Google-Drive/Library/Manuscripts.bib',
-      \'/Users/mli/Google-Drive/Library/SUBCAT.bib'
-      \]
-let g:pandoc#biblio#use_bibtool = 1
-let g:pandoc#completion#bib#mode = 'citeproc'
-" pdf conversion
-let g:pandoc#command#autoexec_on_writes = 0
-let g:pandoc#command#autoexec_command = 'Pandoc pdf'
-map <leader>pp :Pandoc<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Manuscripts/apa_ML.csl<CR>
-map <leader>pp! :Pandoc!<Space>pdf<Space>-sS<Space>--csl<Space>/Users/mli/Google-Drive/Manuscripts/apa_ML.csl<CR>
-" enable pandoc functionality for markdown files while disabling pandoc's markdown syntax
+" enable pandoc functionality for markdown files while disabling pandoc's
+" markdown syntax
 let g:pandoc#filetypes#handled = ['pandoc', 'markdown']
 let g:pandoc#filetypes#pandoc_markdown = 0
 
@@ -245,10 +233,6 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_theme='minimalist'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
-
-" MARKDOWN
-let g:vim_markdown_folding_disabled = 1
-nnoremap <Leader>mm :setfiletype markdown<CR>
 
 "" SYNTASTIC
 "set statusline+=%#warningmsg#
