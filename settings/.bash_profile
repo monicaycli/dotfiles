@@ -24,11 +24,6 @@ export DYLD_LIBRARY_PATH=/opt/X11/lib/flat_namespace
 export DYLD_FALLBACK_LIBRARY_PATH=$HOME/abin:/lib:/usr/lib:/usr/bin/lib:/:/usr/local/opt/ruby/lib
 
 # =========================
-#  ANACONDA
-# =========================
-export PATH=//anaconda/bin:$PATH
-
-# =========================
 #  PYTHON
 # =========================
 # Setting PATH for Python 2.7

@@ -19,25 +19,10 @@ alias GE1="tmux a -t GE1"
 # vim
 alias vimrc="vim ~/.vimrc"
 
-# =========================
-#  OCTAVE
-# =========================
-alias octave="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 ## gettext
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/gettext/lib"
 export CPPFLAGS="-I/usr/local/opt/gettext/include"
-
-# =========================
-#  PYTHON
-# =========================
-#  conda
-# -------------------------
-alias sa="source activate"
-alias sd="source deactivate"
-#  jupyter
-# -------------------------
-alias jn="jupyter notebook"
 
 # =========================
 #  shell
