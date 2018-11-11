@@ -9,8 +9,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-Plug 'valloric/youcompleteme'
-Plug 'metakirby5/codi.vim'
 " syntax
 Plug 'sheerun/vim-polyglot'
 "Plug 'vim-syntastic/syntastic'
@@ -30,7 +28,6 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'lervag/vimtex'
 Plug 'chrisbra/csv.vim'
 " applications
-Plug 'mattn/calendar-vim'
 Plug 'vimwiki/vimwiki'
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
@@ -249,19 +246,6 @@ endif
 let g:airline_theme='minimalist'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 
-" CALENDAR
-let g:calendar_mark = 'left-fit'
-let g:calendar_monday = 1
-let g:calendar_datetime = 'statusline'
-let g:calendar_number_of_months = 4
-" open calendar on the right, set width, and recenter
-function! OptimalCalVR()
-  call calendar#show(3)
-  vertical:res +7
-  call calendar#show(3)
-endfunction
-nnoremap <Leader>calr :call OptimalCalVR()<CR>
-
 " MARKDOWN
 let g:vim_markdown_folding_disabled = 1
 nnoremap <Leader>mm :setfiletype markdown<CR>
@@ -292,21 +276,6 @@ nnoremap <Leader>mm :setfiletype markdown<CR>
 "let g:syntastic_sh_shellcheck_args = '-x'
 
 "let g:syntastic_markdown_checkers = ['proselint', 'textlint']
-
-" CODI
-nnoremap <Leader>cd :Codi!!<CR>
-inoremap <Leader>cd <C-O>:CodiUpdate<CR>
-
-" YOUCOMPLETEME
-let g:ycm_key_invoke_completion = '<M-Y>'
-imap ¥ <M-Y>
-let g:ycm_filetype_whitelist = {
-      \ 'python': 1,
-      \ 'r': 1,
-      \ 'rmd': 1,
-      \ 'sh': 1,
-      \ 'matlab': 1
-      \ }
 
 " VIMWIKI
 " header colors
