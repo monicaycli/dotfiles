@@ -22,7 +22,8 @@ alias caret="~/caret/bin_macosx64/caret5"
 # =========================
 #  EDITOR
 # =========================
-alias vim="nvim"
+# vim
+alias vimrc="vim ~/.vimrc"
 
 # =========================
 #  OCTAVE
@@ -114,5 +115,3 @@ if [ "$TERM" != "linux" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-# vim
-alias vimrc="vim ~/.vimrc"

@@ -1,7 +1,7 @@
 # =========================
 #  EDITOR
 # =========================
-export VISUAL="nvim"
+export VISUAL="vim"
 export EDITOR="$VISUAL"
 export GIT_EDITOR="$VISUAL"
 
