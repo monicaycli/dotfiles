@@ -15,7 +15,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'darfink/vim-plist'
 " colors & themes
-Plug 'flazz/vim-colorschemes'
 Plug 'guns/xterm-color-table.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -52,6 +51,11 @@ set laststatus=2
 set noshowmode
 set nowrap
 
+" colorscheme
+set background=dark
+colorscheme dim
+hi CursorLine cterm=NONE ctermbg=darkgray guibg=darkgray
+
 " highlight overlength characters (>80)
 let g:overlength_highlight = 1
 augroup overlength_highlight
@@ -76,16 +80,6 @@ endfunction
 
 nnoremap <M-H> :call ToggleOverLengthHighlight()<CR>
 nmap Ó <M-H> "alt+shift+h
-
-" colorscheme
-set background=dark
-colorscheme dim
-hi CursorLine cterm=NONE ctermbg=black guibg=black
-
-
-if has("gui_vimr")
-  set termguicolors
-endif
 
 " line number
 set nu " line number on
