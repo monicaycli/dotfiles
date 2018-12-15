@@ -16,11 +16,11 @@ Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'darfink/vim-plist'
 " colors & themes
 Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
 Plug 'guns/xterm-color-table.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'jeffkreeftmeijer/vim-dim'
 " plain text
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
@@ -79,14 +79,12 @@ nmap Ó <M-H> "alt+shift+h
 
 " colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme dim
+hi CursorLine cterm=NONE ctermbg=black guibg=black
+
+
 if has("gui_vimr")
   set termguicolors
-endif
-
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
 endif
 
 " line number
