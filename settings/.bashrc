@@ -12,6 +12,7 @@ alias bib="cd $GD/Library"
 # =========================
 #  EDITOR
 # =========================
+alias vim="nvim"
 # vim
 alias vimrc="vim ~/.vimrc"
 
