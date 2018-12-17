@@ -54,7 +54,7 @@ set nowrap
 " colorscheme
 set background=dark
 colorscheme dim
-hi CursorLine cterm=NONE ctermbg=darkgray guibg=darkgray
+hi CursorLine cterm=NONE ctermbg=237
 
 " highlight overlength characters (>80)
 let g:overlength_highlight = 1
@@ -256,12 +256,12 @@ au BufDelete * call airline#extensions#tabline#buflist#invalidate()
 " VIMWIKI
 " header colors
 let g:vimwiki_hl_headers = 1
-hi vimwikiheader1 ctermfg=167 guifg=#fb4934
-hi VimwikiHeader2 ctermfg=214 guifg=#fabd2f
-hi VimwikiHeader3 ctermfg=108 guifg=#8ec07c
-hi VimwikiHeader4 ctermfg=109 guifg=#83a598
-hi VimwikiHeader5 ctermfg=109 guifg=#83a598
-hi VimwikiHeader6 ctermfg=109 guifg=#83a598
+hi vimwikiheader1 ctermfg=1 cterm=bold
+hi VimwikiHeader2 ctermfg=3 cterm=bold
+hi VimwikiHeader3 ctermfg=4 cterm=bold
+hi VimwikiHeader4 ctermfg=7 cterm=bold
+hi VimwikiHeader5 ctermfg=7 cterm=bold
+hi VimwikiHeader6 ctermfg=7 cterm=bold
 
 " vimwiki tag settings
 map <Leader>vst :VimwikiSearchTags
