@@ -39,6 +39,13 @@ export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # =========================
+# BASH-COMPLETION
+# =========================
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+# =========================
 #  SOURCE .bashrc
 # =========================
 source ~/.bashrc
