@@ -68,4 +68,6 @@ curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.
 rm "$HOME/Downloads/node-latest.pkg"
 
 # npm packages
-npm install -g vtop
+sudo npm install -g vtop
+sudo npm install -g conventional-commit-types-cli
+sudo npm install -g standard-version
