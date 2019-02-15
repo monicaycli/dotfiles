@@ -102,3 +102,11 @@ alias t="/usr/bin/top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
 #  THEFUCK
 # =========================
 eval $(thefuck --alias)
+
+# =========================
+#  HISTORY
+# =========================
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL="ignorespace:ignoredups"
+export HISTIGNORE="history"
