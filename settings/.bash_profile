@@ -18,6 +18,10 @@ export PATH=$HOME/sshfs:$PATH
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
+# show path at title
+PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+export PROMPT_COMMAND="${PROMPT_TITLE}; ${PROMPT_COMMAND}"
+
 # =========================
 #  DYLD
 # =========================
