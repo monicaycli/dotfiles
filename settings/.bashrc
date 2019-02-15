@@ -94,7 +94,9 @@ source ~/.git-completion.bash
 function weather() { curl wttr.in/"$1"?m; }
 
 # Activity dashboard
-alias t="top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
+alias top="vtop -t gooey"
+alias oldtop="/usr/bin/top"
+alias t="/usr/bin/top -F -n 10 -R -s 2 -u -stats cpu,mem,pid,command,time"
 
 # =========================
 #  THEFUCK
