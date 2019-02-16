@@ -60,14 +60,11 @@ brew cask install \
 # CASK FONTS
 brew tap homebrew/cask-fonts
 
-# NODE.JS
-curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ \
-  | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" \
-  > "$HOME/Downloads/node-latest.pkg" \
-  && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
-rm "$HOME/Downloads/node-latest.pkg"
+# NODE
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+nvm install node
 
 # npm packages
-sudo npm install -g vtop
-sudo npm install -g conventional-commit-types-cli
-sudo npm install -g standard-version
+npm install -g vtop
+npm install -g conventional-commit-types-cli
+npm install -g standard-version
