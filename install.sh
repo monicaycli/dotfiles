@@ -69,3 +69,5 @@ npm install -g npx
 npm install -g vtop
 npm install -g conventional-commit-types-cli
 npm install -g standard-version
+npm install -g commitizen
+npm install -g cz-conventional-changelog
