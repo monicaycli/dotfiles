@@ -65,6 +65,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | b
 nvm install node
 
 # npm packages
+npm install -g npx
 npm install -g vtop
 npm install -g conventional-commit-types-cli
 npm install -g standard-version
