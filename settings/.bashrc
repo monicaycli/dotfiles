@@ -1,15 +1,4 @@
 # =========================
-#  QUICK CD
-# =========================
-alias vimwiki="cd $HOME/Google-Drive/wikibase"
-export GD="$HOME/Google-Drive"
-export FS="/Volumes/GoogleDrive/My\ Drive"
-alias gd="cd $GD"
-alias fs="cd $FS"
-alias dot="cd $GD/Github/dotfiles"
-alias bib="cd $GD/Library"
-
-# =========================
 #  EDITOR
 # =========================
 alias vim="nvim"
@@ -60,6 +49,7 @@ alias reload="source $HOME/.bash_profile"
 alias c="clear"
 alias r="reload"
 alias .bashrc="vim $HOME/.bashrc"
+alias ls="exa --icons -laF"
 
 # =========================
 #  GIT
@@ -111,9 +101,9 @@ export HISTFILESIZE=10000
 export HISTCONTROL="ignorespace:ignoredups"
 export HISTIGNORE="history"
 
-# =========================
-#  NODE
-# =========================
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+## =========================
+##  NODE
+## =========================
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

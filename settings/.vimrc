@@ -11,9 +11,9 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 " syntax
 Plug 'sheerun/vim-polyglot'
-"Plug 'vim-syntastic/syntastic'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'darfink/vim-plist'
+Plug 'elzr/vim-json'
 " colors & themes
 Plug 'guns/xterm-color-table.vim'
 Plug 'vim-airline/vim-airline'
@@ -26,8 +26,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'lervag/vimtex'
 Plug 'chrisbra/csv.vim'
-" applications
-Plug 'vimwiki/vimwiki'
 " pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -54,7 +52,11 @@ set nowrap
 " colorscheme
 set background=dark
 colorscheme dim
-hi CursorLine cterm=NONE ctermbg=237
+hi CursorLine cterm=NONE ctermbg=0
+
+hi link GitGutterAdd DiffAdd
+hi link GitGutterDelete DiffDelete
+hi link GitGutterChange DiffChange
 
 " highlight overlength characters (>80)
 let g:overlength_highlight = 1
@@ -225,119 +227,6 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_theme='minimalist'
 au BufDelete * call airline#extensions#tabline#buflist#invalidate()
-
-"" SYNTASTIC
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_loc_list_height = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-
-"let g:syntastic_mode_map = {
-    "\ 'mode': 'passive',
-    "\ 'active_filetypes': ['python', 'r', 'rmd', 'sh', 'markdown']
-    "\ }
-
-"let g:syntastic_enable_r_lintr_checker = 1
-"let g:syntastic_r_checkers = ['lintr']
-"let g:syntastic_rmd_checkers = ['lintr']
-
-"let g:syntastic_python_checkers = ['py3kwarn', 'pylama']
-
-"let g:syntastic_sh_checkers = ['shellcheck']
-"let g:syntastic_sh_shellcheck_args = '-x'
-
-"let g:syntastic_markdown_checkers = ['proselint', 'textlint']
-
-" VIMWIKI
-" header colors
-let g:vimwiki_hl_headers = 1
-hi vimwikiheader1 ctermfg=1 cterm=bold
-hi VimwikiHeader2 ctermfg=3 cterm=bold
-hi VimwikiHeader3 ctermfg=4 cterm=bold
-hi VimwikiHeader4 ctermfg=7 cterm=bold
-hi VimwikiHeader5 ctermfg=7 cterm=bold
-hi VimwikiHeader6 ctermfg=7 cterm=bold
-
-" vimwiki tag settings
-map <Leader>vst :VimwikiSearchTags
-map <Leader>vgt :VimwikiGenerateTags<CR>
-map <Leader>vrt :VimwikiRebuildTags<CR>
-map <Leader>lo :lopen<CR>
-
-" make list
-noremap glo :VimwikiChangeSymbolTo *<CR>
-
-" todo list settings
-map <Leader>tt <Plug>VimwikiToggleListItem
-let g:vimwiki_listsyms = ' .oOx'
-
-" navigation settings
-nmap <Leader>wq <Plug>VimwikiVSplitLink
-
-" auto change directory
-let g:vimwiki_auto_chdir = 1
-
-" vimwiki with markdown support
-let g:vimwiki_ext2syntax = {
-      \ '.md': 'markdown',
-      \ '.markdown': 'markdown',
-      \ '.mdown': 'markdown'
-      \ }
-
-" vimwiki list
-let g:vimwiki_list = [
-      \ {'path': '~/Google-Drive/wikibase/',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown',
-      \ 'diary_rel_path': 'worklog/',
-      \ 'diary_index': 'index',
-      \ 'diary_header': 'Work Log'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/01*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/02*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/03*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/04*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/05*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/06*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/07*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/08*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/09*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \
-      \ {'path': '~/Google-Drive/wikibase/10*',
-      \ 'ext': '.md',
-      \ 'syntax': 'markdown'},
-      \ ]
 
 " PYTHON
 let g:python_host_prog = '/Library/Frameworks/Python.framework/Versions/2.7/bin/python2'

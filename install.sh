@@ -28,6 +28,8 @@ brew install \
   iconv \
   readline
 
+brew install ag ack
+brew install exa
 # CASK
 brew tap caskroom/cask
 
@@ -59,6 +61,7 @@ brew cask install \
 
 # CASK FONTS
 brew tap homebrew/cask-fonts
+font-sauce-code-pro-nerd-font
 
 # NODE
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
